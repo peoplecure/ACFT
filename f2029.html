@@ -34,9 +34,9 @@
         placeholder="Push-Ups" 
         required=""
         min="1" 
-        max="300"
-        onkeyup="if(parseInt(this.value) > 300){ this.value = 300; return false; }">
-    <stat id="PushUp"></stat>
+        max="340"
+        onkeyup="if(parseInt(this.value) > 340){ this.value = 340; return false; }">
+    <stat id="MDL"></stat>
     <br>
     
     <input id="B" 
@@ -47,7 +47,7 @@
         min="1" 
         max="300"
         onkeyup="if(parseInt(this.value) > 300){ this.value = 300; return false; }">
-    <stat id="SitUp"></stat>
+    <stat id="SPT"></stat>
     <br>
     
     <input id="C" 
@@ -59,12 +59,36 @@
         max="100"
         onkeyup="if(parseInt(this.value) > 100){ this.value = 100; return false; }"
         >
-    <stat id="ChinUp"></stat>
+    <stat id="HRP"></stat>
     </div>
     
+    <input id="D" 
+    	type="number" 
+        class="form-control formBlock" 
+        placeholder="Chin-Ups" 
+        required=""
+        min="1" 
+        max="100"
+        onkeyup="if(parseInt(this.value) > 100){ this.value = 100; return false; }"
+        >
+    <stat id="SDC"></stat>
+    </div>
+
+    <input id="E" 
+    	type="number" 
+        class="form-control formBlock" 
+        placeholder="Chin-Ups" 
+        required=""
+        min="1" 
+        max="100"
+        onkeyup="if(parseInt(this.value) > 100){ this.value = 100; return false; }"
+        >
+    <stat id="LTK"></stat>
+    </div>
+	
     <div style="padding: 0 0 25px 0;">
     <label>Step 3: Enter your run time:</label>
-    <input id="D"
+    <input id="F"
     	type="number" 
         class="form-control formBlock" 
         placeholder="Minutes" 
@@ -76,7 +100,7 @@
     <stat id="RunTime"></stat>
     <br>
     
-    <input id="E" 
+    <input id="G" 
     	type="number" 
     	class="form-control formBlock" 
     	placeholder="Seconds" 
