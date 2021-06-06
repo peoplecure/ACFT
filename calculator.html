@@ -1,0 +1,129 @@
+<html>
+<head>
+<title>ACFT Calculator</title>
+<script type="text/javascript" src="./js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="./js/acft.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+
+    <div style="padding: 0 0 25px 0;">
+	<h1> <strat id="TesterGroup"></strat></h1>
+    </div>
+
+    <div style="padding: 25px 0 50px 0;">
+      <label>Step 1: In the making ...</label>
+      <select onChange="window.location.href=this.value">
+  	<option value="none" selected disabled hidden></option>
+        	<option value="heavy.html">Heavy</option>
+        	<option value="significant.html">Significant</option>
+        	<option value="moderate.html">Moderate</option>
+      </select>
+    </div>
+
+    <div style="padding: 0 0 25px 0;">
+    <label>Step 2: Enter your scores:</label>
+    <input id="A"
+    	type="number"
+        class="form-control formBlock"
+        placeholder="MDL"
+        required=""
+        min="1"
+        max="340"
+        onkeyup="if(parseInt(this.value) > 340){ this.value = 340; return false; }">
+    <stat id="MDL"></stat>
+    <br>
+
+    <input id="B"
+    	type="number"
+        class="form-control formBlock"
+        placeholder="SPT"
+        required=""
+        min="1"
+        max="300"
+        onkeyup="if(parseInt(this.value) > 300){ this.value = 300; return false; }">
+    <stat id="SPT"></stat>
+    <br>
+
+    <input id="C"
+    	type="number"
+        class="form-control formBlock"
+        placeholder="Chin-Ups"
+        required=""
+        min="1"
+        max="100"
+        onkeyup="if(parseInt(this.value) > 100){ this.value = 100; return false; }"
+        >
+    <stat id="HRP"></stat>
+    </div>
+
+    <input id="D"
+    	type="number"
+        class="form-control formBlock"
+        placeholder="Chin-Ups"
+        required=""
+        min="1"
+        max="100"
+        onkeyup="if(parseInt(this.value) > 100){ this.value = 100; return false; }"
+        >
+    <stat id="SDC"></stat>
+    </div>
+
+    <input id="E"
+    	type="number"
+        class="form-control formBlock"
+        placeholder="Chin-Ups"
+        required=""
+        min="1"
+        max="100"
+        onkeyup="if(parseInt(this.value) > 100){ this.value = 100; return false; }"
+        >
+    <stat id="LTK"></stat>
+    </div>
+
+    <div style="padding: 0 0 25px 0;">
+    <label>Step 3: Enter your run time:</label>
+    <input id="F"
+    	type="number"
+        class="form-control formBlock"
+        placeholder="Minutes"
+        required=""
+        min="1"
+        max="59"
+        onkeyup="if(parseInt(this.value) > 59){ this.value = 59; return false; }"
+        >
+    <stat id="RunTime"></stat>
+    <br>
+
+    <input id="G"
+    	type="number"
+    	class="form-control formBlock"
+    	placeholder="Seconds"
+        required=""
+        min="1"
+        max="59"
+        onkeyup="if(parseInt(this.value) > 59){ this.value = 59; return false; }"
+        >
+    </div>
+
+    <label>Your ACFT Score:</label>
+    <span id="Score" style="text-align: center; font-size: 72px"></span>
+
+    <div style="font-style: Arial; width: 700px; margin: 50px 0 50px 0;">
+    <p>wording</p>
+    </div>
+
+<script>
+    // results
+    if (window.parent && window.parent.parent){
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: ""
+      }], "*")
+    }
+    window.name = "result"
+  </script>
+</body>
+
+</html>
