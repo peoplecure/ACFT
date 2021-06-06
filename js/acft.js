@@ -1,48 +1,47 @@
 $(window).load(function(){
 
-	$('#TesterGroup').html("(Female, 20-29)");
+	$('#TesterGroup').html("ALL");
 
 	$('input').keyup(function(){
 
 	    //Scores
 	    const mdl  = Number($('#A').val() || NaN);
-	    const spt = Number($('#B').val() || NaN);
+	    const spt  = Number($('#B').val() || NaN);
 	    const hrp  = Number($('#C').val() || NaN);
 	    const sdc  = Number($('#D').val() || NaN);
 	    const ltk  = Number($('#E').val() || NaN);
-	    const run  = Number($('#F').val() || NaN);
+	    const run  = Number($('#G').val() || NaN);
 
 	    //MDL
-	    const pushed = isNaN(push) ? '' : '';
+	    const pushed = isNaN(mdl) ? '' : '';
 	    document.getElementById("MDL").innerHTML = pushed;
-	    if (mdl =340) {document.getElementById('MDL').innerHTML = '100';}
-	    if (mdl =330) {document.getElementById('MDL').innerHTML = '97';}
-	    if (mdl =320) {document.getElementById('MDL').innerHTML = '94';}
-	    if (mdl =310) {document.getElementById('MDL').innerHTML = '92';}
-	    if (mdl =300) {document.getElementById('MDL').innerHTML = '90';}
-	    if (mdl =290) {document.getElementById('MDL').innerHTML = '88';}
-	    if (mdl =280) {document.getElementById('MDL').innerHTML = '86';}
-	    if (mdl =270) {document.getElementById('MDL').innerHTML = '84';}
-	    if (mdl =260) {document.getElementById('MDL').innerHTML = '82';}
-	    if (mdl =250) {document.getElementById('MDL').innerHTML = '80';}
-	    if (mdl =240) {document.getElementById('MDL').innerHTML = '78';}
-	    if (mdl =230) {document.getElementById('MDL').innerHTML = '76';}
-	    if (mdl =220) {document.getElementById('MDL').innerHTML = '74';}
-	    if (mdl =210) {document.getElementById('MDL').innerHTML = '72';}
-	    if (mdl =200) {document.getElementById('MDL').innerHTML = '70';}
-	    if (mdl =190) {document.getElementById('MDL').innerHTML = '68';}
-	    if (mdl =180) {document.getElementById('MDL').innerHTML = '65';}
-	    if (mdl =170) {document.getElementById('MDL').innerHTML = '64';}
-	    if (mdl =160) {document.getElementById('MDL').innerHTML = '63';}
-	    if (mdl =150) {document.getElementById('MDL').innerHTML = '62';}
-	    if (mdl =140) {document.getElementById('MDL').innerHTML = '60';}
-	    if (mdl =130) {document.getElementById('MDL').innerHTML = '50';}
-	    if (mdl =120) {document.getElementById('MDL').innerHTML = '40';}
-	    if (mdl =110) {document.getElementById('MDL').innerHTML = '30';}
-	    if (mdl =100) {document.getElementById('MDL').innerHTML = '20';}
-	    if (mdl =90) {document.getElementById('MDL').innerHTML = '10';}
-	    if (mdl =80) {document.getElementById('MDL').innerHTML = '0';}
-
+	    if (mdl = 340) {document.getElementById("MDL").innerHTML = "100";}
+	    if (mdl = 330) {document.getElementById('MDL').innerHTML = '97';}
+	    if (mdl = 320) {document.getElementById('MDL').innerHTML = '94';}
+	    if (mdl = 310) {document.getElementById('MDL').innerHTML = '92';}
+	    if (mdl = 300) {document.getElementById('MDL').innerHTML = '90';}
+	    if (mdl = 290) {document.getElementById('MDL').innerHTML = '88';}
+	    if (mdl = 280) {document.getElementById('MDL').innerHTML = '86';}
+	    if (mdl = 270) {document.getElementById('MDL').innerHTML = '84';}
+	    if (mdl = 260) {document.getElementById('MDL').innerHTML = '82';}
+	    if (mdl = 250) {document.getElementById('MDL').innerHTML = '80';}
+	    if (mdl = 240) {document.getElementById('MDL').innerHTML = '78';}
+	    if (mdl = 230) {document.getElementById('MDL').innerHTML = '76';}
+	    if (mdl = 220) {document.getElementById('MDL').innerHTML = '74';}
+	    if (mdl = 210) {document.getElementById('MDL').innerHTML = '72';}
+	    if (mdl = 200) {document.getElementById('MDL').innerHTML = '70';}
+	    if (mdl = 190) {document.getElementById('MDL').innerHTML = '68';}
+	    if (mdl = 180) {document.getElementById('MDL').innerHTML = '65';}
+	    if (mdl = 170) {document.getElementById('MDL').innerHTML = '64';}
+	    if (mdl = 160) {document.getElementById('MDL').innerHTML = '63';}
+	    if (mdl = 150) {document.getElementById('MDL').innerHTML = '62';}
+	    if (mdl = 140) {document.getElementById('MDL').innerHTML = '60';}
+	    if (mdl = 130) {document.getElementById('MDL').innerHTML = '50';}
+	    if (mdl = 120) {document.getElementById('MDL').innerHTML = '40';}
+	    if (mdl = 110) {document.getElementById('MDL').innerHTML = '30';}
+	    if (mdl = 100) {document.getElementById('MDL').innerHTML = '20';}
+	    if (mdl =  90) {document.getElementById('MDL').innerHTML = '10';}
+	    if (mdl =  80) {document.getElementById('MDL').innerHTML = '0';}
 
 	    //SPT
 	    const sat = isNaN(sit) ? '' : '';
@@ -116,7 +115,7 @@ $(window).load(function(){
 	    var r;
 	    const add = Number((p +s +c +r) || NaN);
 	    const final = isNaN(add) ? '' : '';
-        document.getElementById("Score").innerHTML = final;
+      document.getElementById("Score").innerHTML = final;
 
 	    if (pushpoint == "Excellent") {p = 4};
 	    if (pushpoint == "Good") {p = 3};
