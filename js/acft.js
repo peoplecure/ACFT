@@ -1,7 +1,7 @@
 $(window).load(function(){
 
 	function myFunction() {
-	alert("Hello! I am an alert box!");
+		alert("Hello! I am an alert box!");
 	}
 
 	$('#TesterGroup').html("(Moderate)");
