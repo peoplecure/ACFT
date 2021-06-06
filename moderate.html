@@ -30,10 +30,10 @@
           min="1"
           max="340"
           onkeyup="if(parseInt(this.value) > 340){ this.value = 340; return false; }">
-      <stat id="MDL"></stat>
+      <stat id="MDLid"></stat>
       <br>
 
-      <input id="B"
+      <input id="Q"
       	type="number"
           class="form-control formBlock"
           placeholder="SPT"
@@ -41,7 +41,18 @@
           min="1"
           max="12.5"
           onkeyup="if(parseInt(this.value) > 12.5){ this.value = 12.5; return false; }">
-      <stat id="SPT"></stat>
+      <stat id="SPTid"></stat>
+      <br>
+
+      <input id="B"
+        type="number"
+          class="form-control formBlock"
+          placeholder="Sit-Ups"
+          required=""
+          min="1"
+          max="300"
+          onkeyup="if(parseInt(this.value) > 300){ this.value = 300; return false; }">
+      <stat id="SitUp"></stat>
       <br>
 
       <input id="C"

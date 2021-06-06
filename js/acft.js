@@ -5,17 +5,18 @@ $(window).load(function(){
 	$('input').keyup(function(){
 
 	    //Scores
-	    const mdl  = Number($('#A').val() || NaN);
-	    const spt  = Number($('#B').val() || NaN);
-	    const hrp  = Number($('#C').val() || NaN);
-	    const sdc  = Number($('#D').val() || NaN);
-	    const ltk  = Number($('#E').val() || NaN);
-	    const run  = Number($('#G').val() || NaN);
-
+	    const mdl = Number($('#A').val() || NaN);
+	    const spt = Number($('#Q').val() || NaN);
+			const sit = Number($('#B').val() || NaN);
+	    const hrp = Number($('#C').val() || NaN);
+	    const sdc = Number($('#D').val() || NaN);
+	    const ltk = Number($('#F').val() || NaN);
+	    const run = Number($('#G').val() || NaN);
+/*
 	    //MDL
 	    const mdled = isNaN(mdl) ? '' : '';
-	    document.getElementById("MDL").innerHTML = mdled;
-	    if (mdl = 340) {document.getElementById("MDL").innerHTML = "100";}
+	    document.getElementById("MDLid").innerHTML = mdled;
+	    if (mdl = 340) {document.getElementById("MDLid").innerHTML = "www";}
 	    if (mdl = 330) {document.getElementById('MDL').innerHTML = '97';}
 	    if (mdl = 320) {document.getElementById('MDL').innerHTML = '94';}
 	    if (mdl = 310) {document.getElementById('MDL').innerHTML = '92';}
@@ -42,16 +43,26 @@ $(window).load(function(){
 	    if (mdl = 100) {document.getElementById('MDL').innerHTML = '20';}
 	    if (mdl =  90) {document.getElementById('MDL').innerHTML = '10';}
 	    if (mdl =  80) {document.getElementById('MDL').innerHTML = '0';}
-
+*/
 	    //SPT
 	    const spted = isNaN(spt) ? '' : '';
-	    document.getElementById("").innerHTML = spted;
-	    if (spt >= 44) {document.getElementById("SPT").innerHTML = "Excellent";}
-	    if (spt <= 43 & spt >= 38) {document.getElementById("SPT").innerHTML = "Good";}
-	    if (spt <= 37 & spt >= 32) {document.getElementById("SPT").innerHTML = "Fair";}
-	    if (spt <= 31 & spt >= 27) {document.getElementById("SPT").innerHTML = "Poor";}
-	    if (spt <= 26) {document.getElementById("SPT").innerHTML = "Very Poor";}
-	    if (spt === null || spt === "") {document.getElementById("SPT").innerHTML = "";}
+	    document.getElementById("SPTid").innerHTML = spted;
+	    if (spt >= 44) {document.getElementById("SPTid").innerHTML = "Excellent";}
+	    if (spt <= 43 & spt >= 38) {document.getElementById("SPTid").innerHTML = "Good";}
+	    if (spt <= 37 & spt >= 32) {document.getElementById("SPTid").innerHTML = "Fair";}
+	    if (spt <= 31 & spt >= 27) {document.getElementById("SPTid").innerHTML = "Poor";}
+	    if (spt <= 26) {document.getElementById("SPTid").innerHTML = "Very Poor";}
+	    if (spt === null || spt === "") {document.getElementById("SPTid").innerHTML = "";}
+
+
+			const sat = isNaN(sit) ? '' : '';
+			document.getElementById("SitUp").innerHTML = sat;
+			if (sit >= 44) {document.getElementById("SitUp").innerHTML = "Excellent";}
+			if (sit <= 43 & sit >= 38) {document.getElementById("SitUp").innerHTML = "Good";}
+			if (sit <= 37 & sit >= 32) {document.getElementById("SitUp").innerHTML = "Fair";}
+			if (sit <= 31 & sit >= 27) {document.getElementById("SitUp").innerHTML = "Poor";}
+			if (sit <= 26) {document.getElementById("SitUp").innerHTML = "0";}
+			if (sit === null || sit === "") {document.getElementById("SitUp").innerHTML = "";}
 
 	    //HRP
 	    const hrped = isNaN(hrp) ? '' : '';
@@ -66,7 +77,7 @@ $(window).load(function(){
 	    //SDC
 			const SDCmin = 60 * Number($('#D').val() || NaN);
 	    const SDCsec = Number($('#E').val() || NaN);
-	    const SDCtotal = min + sec;
+	    const SDCtotal = SDCmin + SDCsec;
 	    const SDCspeed = isNaN(SDCtotal) ? '' : '';
 	    document.getElementById("SDC").innerHTML = SDCspeed;
 	    if (SDCtotal <= 770) {document.getElementById("SDC").innerHTML = "Excellent";}
@@ -74,8 +85,8 @@ $(window).load(function(){
 	    if (SDCtotal <= 926 & SDCtotal >= 865) {document.getElementById("SDC").innerHTML = "Fair";}
 	    if (SDCtotal <= 993 & SDCtotal >= 927) {document.getElementById("SDC").innerHTML = "Poor";}
 	    if (SDCtotal >= 994) {document.getElementById("SDC").innerHTML = "Very Poor";}
-	    if (SDCmin === null || min === "") {document.getElementById("SDC").innerHTML = "";}
-	    if (SDCsec === null || sec === "") {document.getElementById("SDC").innerHTML = "";}
+	    if (SDCmin === null || SDCmin === "") {document.getElementById("SDC").innerHTML = "";}
+	    if (SDCsec === null || SDCsec === "") {document.getElementById("SDC").innerHTML = "";}
 
 	    //LTK
 	    const ltked = isNaN(ltk) ? '' : '';
