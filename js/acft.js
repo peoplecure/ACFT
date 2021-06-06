@@ -5,8 +5,8 @@ $(window).load(function(){
 	$('input').keyup(function(){
 
 	    //Scores
-	    const mdl  = Number($('#A').val() || NaN); 
-	    const spt = Number($('#B').val() || NaN); 
+	    const mdl  = Number($('#A').val() || NaN);
+	    const spt = Number($('#B').val() || NaN);
 	    const hrp  = Number($('#C').val() || NaN);
 	    const sdc  = Number($('#D').val() || NaN);
 	    const ltk  = Number($('#E').val() || NaN);
@@ -42,8 +42,8 @@ $(window).load(function(){
 	    if (mdl =100) {document.getElementById('MDL').innerHTML = '20';}
 	    if (mdl =90) {document.getElementById('MDL').innerHTML = '10';}
 	    if (mdl =80) {document.getElementById('MDL').innerHTML = '0';}
-		
-		
+
+
 	    //SPT
 	    const sat = isNaN(sit) ? '' : '';
 	    document.getElementById("SitUp").innerHTML = sat;
@@ -65,14 +65,18 @@ $(window).load(function(){
 	    if (chin === null || chin === "") {document.getElementById("ChinUp").innerHTML = "";}
 
 	    //SDC
-	    const chinned = isNaN(chin) ? '' : '';
-	    document.getElementById("ChinUp").innerHTML = chinned;
-	    if (chin >= 4) {document.getElementById("ChinUp").innerHTML = "Excellent";}
-	    if (chin === 3) {document.getElementById("ChinUp").innerHTML = "Good";}
-	    if (chin === 2) {document.getElementById("ChinUp").innerHTML = "Fair";}
-	    if (chin === 1) {document.getElementById("ChinUp").innerHTML = "Poor";}
-	    if (chin === 0) {document.getElementById("ChinUp").innerHTML = "Very Poor";}
-	    if (chin === null || chin === "") {document.getElementById("ChinUp").innerHTML = "";}
+			const SDCmin = 60 * Number($('#D').val() || NaN);
+	    const SDCsec = Number($('#E').val() || NaN);
+	    const total = min + sec;
+	    const speed = isNaN(total) ? '' : '';
+	    document.getElementById("SDC").innerHTML = speed;
+	    if (total <= 770) {document.getElementById("SDC").innerHTML = "Excellent";}
+	    if (total <= 864 & total >= 771) {document.getElementById("SDC").innerHTML = "Good";}
+	    if (total <= 926 & total >= 865) {document.getElementById("SDC").innerHTML = "Fair";}
+	    if (total <= 993 & total >= 927) {document.getElementById("SDC").innerHTML = "Poor";}
+	    if (total >= 994) {document.getElementById("SDC").innerHTML = "Very Poor";}
+	    if (SDCmin === null || min === "") {document.getElementById("SDC").innerHTML = "";}
+	    if (SDCsec === null || sec === "") {document.getElementById("SDC").innerHTML = "";}
 
 	    //LTK
 	    const chinned = isNaN(chin) ? '' : '';
@@ -83,10 +87,10 @@ $(window).load(function(){
 	    if (chin === 1) {document.getElementById("ChinUp").innerHTML = "Poor";}
 	    if (chin === 0) {document.getElementById("ChinUp").innerHTML = "Very Poor";}
 	    if (chin === null || chin === "") {document.getElementById("ChinUp").innerHTML = "";}
-		
+
 	    //Run Time
-	    const min = 60 * Number($('#D').val() || NaN);
-	    const sec = Number($('#E').val() || NaN);
+	    const min = 60 * Number($('#G').val() || NaN);
+	    const sec = Number($('#H').val() || NaN);
 	    const total = min + sec;
 	    const speed = isNaN(total) ? '' : '';
 	    document.getElementById("RunTime").innerHTML = speed;
@@ -107,7 +111,7 @@ $(window).load(function(){
 	    var runpoint = document.getElementById("RunTime").innerHTML;
 
 	    var p;
-	    var s; 
+	    var s;
 	    var c;
 	    var r;
 	    const add = Number((p +s +c +r) || NaN);
