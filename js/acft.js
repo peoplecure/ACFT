@@ -1,6 +1,6 @@
 $(window).load(function(){
 
-	$('#TesterGroup').html("ALL");
+	$('#TesterGroup').html("(All Groups)");
 
 	$('input').keyup(function(){
 
