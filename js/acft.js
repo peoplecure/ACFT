@@ -1,9 +1,5 @@
 $(window).load(function(){
 
-	function myFunction() {
-		alert("Hello! I am an alert box!");
-	}
-
 	$('#TesterGroup').html("(Moderate)");
 
 	$('input').keyup(function(){
@@ -17,8 +13,8 @@ $(window).load(function(){
 	    const run  = Number($('#G').val() || NaN);
 
 	    //MDL
-	    const pushed = isNaN(mdl) ? '' : '';
-	    document.getElementById("MDL").innerHTML = pushed;
+	    const mdled = isNaN(mdl) ? '' : '';
+	    document.getElementById("MDL").innerHTML = mdled;
 	    if (mdl = 340) {document.getElementById("MDL").innerHTML = "100";}
 	    if (mdl = 330) {document.getElementById('MDL').innerHTML = '97';}
 	    if (mdl = 320) {document.getElementById('MDL').innerHTML = '94';}
@@ -48,48 +44,48 @@ $(window).load(function(){
 	    if (mdl =  80) {document.getElementById('MDL').innerHTML = '0';}
 
 	    //SPT
-	    const sat = isNaN(sit) ? '' : '';
-	    document.getElementById("SitUp").innerHTML = sat;
-	    if (sit >= 44) {document.getElementById("SitUp").innerHTML = "Excellent";}
-	    if (sit <= 43 & sit >= 38) {document.getElementById("SitUp").innerHTML = "Good";}
-	    if (sit <= 37 & sit >= 32) {document.getElementById("SitUp").innerHTML = "Fair";}
-	    if (sit <= 31 & sit >= 27) {document.getElementById("SitUp").innerHTML = "Poor";}
-	    if (sit <= 26) {document.getElementById("SitUp").innerHTML = "Very Poor";}
-	    if (sit === null || sit === "") {document.getElementById("SitUp").innerHTML = "";}
+	    const spted = isNaN(spt) ? '' : '';
+	    document.getElementById("").innerHTML = spted;
+	    if (spt >= 44) {document.getElementById("SPT").innerHTML = "Excellent";}
+	    if (spt <= 43 & spt >= 38) {document.getElementById("SPT").innerHTML = "Good";}
+	    if (spt <= 37 & spt >= 32) {document.getElementById("SPT").innerHTML = "Fair";}
+	    if (spt <= 31 & spt >= 27) {document.getElementById("SPT").innerHTML = "Poor";}
+	    if (spt <= 26) {document.getElementById("SPT").innerHTML = "Very Poor";}
+	    if (spt === null || spt === "") {document.getElementById("SPT").innerHTML = "";}
 
 	    //HRP
-	    const chinned = isNaN(chin) ? '' : '';
-	    document.getElementById("ChinUp").innerHTML = chinned;
-	    if (chin >= 4) {document.getElementById("ChinUp").innerHTML = "Excellent";}
-	    if (chin === 3) {document.getElementById("ChinUp").innerHTML = "Good";}
-	    if (chin === 2) {document.getElementById("ChinUp").innerHTML = "Fair";}
-	    if (chin === 1) {document.getElementById("ChinUp").innerHTML = "Poor";}
-	    if (chin === 0) {document.getElementById("ChinUp").innerHTML = "Very Poor";}
-	    if (chin === null || chin === "") {document.getElementById("ChinUp").innerHTML = "";}
+	    const hrped = isNaN(hrp) ? '' : '';
+	    document.getElementById("HRP").innerHTML = hrped;
+	    if (hrp >= 4) {document.getElementById("HRP").innerHTML = "Excellent";}
+	    if (hrp === 3) {document.getElementById("HRP").innerHTML = "Good";}
+	    if (hrp === 2) {document.getElementById("HRP").innerHTML = "Fair";}
+	    if (hrp === 1) {document.getElementById("HRP").innerHTML = "Poor";}
+	    if (hrp === 0) {document.getElementById("HRP").innerHTML = "Very Poor";}
+	    if (hrp === null || hrp === "") {document.getElementById("HRP").innerHTML = "";}
 
 	    //SDC
 			const SDCmin = 60 * Number($('#D').val() || NaN);
 	    const SDCsec = Number($('#E').val() || NaN);
-	    const total = min + sec;
-	    const speed = isNaN(total) ? '' : '';
-	    document.getElementById("SDC").innerHTML = speed;
-	    if (total <= 770) {document.getElementById("SDC").innerHTML = "Excellent";}
-	    if (total <= 864 & total >= 771) {document.getElementById("SDC").innerHTML = "Good";}
-	    if (total <= 926 & total >= 865) {document.getElementById("SDC").innerHTML = "Fair";}
-	    if (total <= 993 & total >= 927) {document.getElementById("SDC").innerHTML = "Poor";}
-	    if (total >= 994) {document.getElementById("SDC").innerHTML = "Very Poor";}
+	    const SDCtotal = min + sec;
+	    const SDCspeed = isNaN(SDCtotal) ? '' : '';
+	    document.getElementById("SDC").innerHTML = SDCspeed;
+	    if (SDCtotal <= 770) {document.getElementById("SDC").innerHTML = "Excellent";}
+	    if (SDCtotal <= 864 & SDCtotal >= 771) {document.getElementById("SDC").innerHTML = "Good";}
+	    if (SDCtotal <= 926 & SDCtotal >= 865) {document.getElementById("SDC").innerHTML = "Fair";}
+	    if (SDCtotal <= 993 & SDCtotal >= 927) {document.getElementById("SDC").innerHTML = "Poor";}
+	    if (SDCtotal >= 994) {document.getElementById("SDC").innerHTML = "Very Poor";}
 	    if (SDCmin === null || min === "") {document.getElementById("SDC").innerHTML = "";}
 	    if (SDCsec === null || sec === "") {document.getElementById("SDC").innerHTML = "";}
 
 	    //LTK
-	    const chinned = isNaN(chin) ? '' : '';
-	    document.getElementById("ChinUp").innerHTML = chinned;
-	    if (chin >= 4) {document.getElementById("ChinUp").innerHTML = "Excellent";}
-	    if (chin === 3) {document.getElementById("ChinUp").innerHTML = "Good";}
-	    if (chin === 2) {document.getElementById("ChinUp").innerHTML = "Fair";}
-	    if (chin === 1) {document.getElementById("ChinUp").innerHTML = "Poor";}
-	    if (chin === 0) {document.getElementById("ChinUp").innerHTML = "Very Poor";}
-	    if (chin === null || chin === "") {document.getElementById("ChinUp").innerHTML = "";}
+	    const ltked = isNaN(ltk) ? '' : '';
+	    document.getElementById("HRP").innerHTML = ltked;
+	    if (ltk >= 4) {document.getElementById("HRP").innerHTML = "Excellent";}
+	    if (ltk === 3) {document.getElementById("HRP").innerHTML = "Good";}
+	    if (ltk === 2) {document.getElementById("HRP").innerHTML = "Fair";}
+	    if (ltk === 1) {document.getElementById("HRP").innerHTML = "Poor";}
+	    if (ltk === 0) {document.getElementById("HRP").innerHTML = "Very Poor";}
+	    if (ltk === null || ltk === "") {document.getElementById("HRP").innerHTML = "";}
 
 	    //Run Time
 	    const min = 60 * Number($('#G').val() || NaN);
@@ -106,11 +102,11 @@ $(window).load(function(){
 	    if (sec === null || sec === "") {document.getElementById("RunTime").innerHTML = "";}
 
 	    //Total Score
-	    var MDLpoint = document.getElementById("MDL").innerHTML;
-	    var SPTpoint = document.getElementById("SPT").innerHTML;
-	    var HRPpoint = document.getElementById("HRP").innerHTML;
-	    var SDCpoint = document.getElementById("SDC").innerHTML;
-	    var LTKpoint = document.getElementById("LTK").innerHTML;
+	    var mdlpoint = document.getElementById("MDL").innerHTML;
+	    var sptpoint = document.getElementById("SPT").innerHTML;
+	    var hrppoint = document.getElementById("HRP").innerHTML;
+	    var sdcpoint = document.getElementById("SDC").innerHTML;
+	    var ltkpoint = document.getElementById("LTK").innerHTML;
 	    var runpoint = document.getElementById("RunTime").innerHTML;
 
 	    var p;
@@ -121,23 +117,23 @@ $(window).load(function(){
 	    const final = isNaN(add) ? '' : '';
       document.getElementById("Score").innerHTML = final;
 
-	    if (pushpoint == "Excellent") {p = 4};
-	    if (pushpoint == "Good") {p = 3};
-	    if (pushpoint == "Fair") {p = 2};
-	    if (pushpoint == "Poor") {p = 1};
-	    if (pushpoint == "Very Poor") {p = 0};
+	    if (mdlpoint == "Excellent") {p = 4};
+	    if (mdlpoint == "Good") {p = 3};
+	    if (mdlpoint == "Fair") {p = 2};
+	    if (mdlpoint == "Poor") {p = 1};
+	    if (mdlpoint == "Very Poor") {p = 0};
 
-	    if (sitpoint == "Excellent") {s = 4};
-	    if (sitpoint == "Good") {s = 3};
-	    if (sitpoint == "Fair") {s = 2};
-	    if (sitpoint == "Poor") {s = 1};
-	    if (sitpoint == "Very Poor") {s = 0};
+	    if (sptpoint == "Excellent") {s = 4};
+	    if (sptpoint == "Good") {s = 3};
+	    if (sptpoint == "Fair") {s = 2};
+	    if (sptpoint == "Poor") {s = 1};
+	    if (sptpoint == "Very Poor") {s = 0};
 
-	    if (chinpoint == "Excellent") {c = 4};
-	    if (chinpoint == "Good") {c = 3};
-	    if (chinpoint == "Fair") {c = 2};
-	    if (chinpoint == "Poor") {c = 1};
-	    if (chinpoint == "Very Poor") {c = 0};
+	    if (hrppoint == "Excellent") {c = 4};
+	    if (hrppoint == "Good") {c = 3};
+	    if (hrppoint == "Fair") {c = 2};
+	    if (hrppoint == "Poor") {c = 1};
+	    if (hrppoint == "Very Poor") {c = 0};
 
 	    if (runpoint == "Excellent") {r = 4};
 	    if (runpoint == "Good") {r = 3};
