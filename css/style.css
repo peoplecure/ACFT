@@ -10,18 +10,18 @@ body {
   margin:0 auto;
 }
 
-h1 { 
-  margin: 0 10px 0px 5px; 
-  padding: 0px; 
-  font-size: 42px; 
-  font-family: Arial 
+h1 {
+  margin: 0 10px 0px 0;
+  padding: 0px;
+  font-size: 42px;
+  font-family: Arial
 }
 
-input { 
-  margin: 0 10px 10px 10px; 
-  padding: 5px; 
-  font-size: 36px; 
-  width: 250px 
+input {
+  margin: 0 10px 20px 0;
+  padding: 5px;
+  font-size: 36px;
+  width: 150px
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -36,29 +36,29 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-label { 
-  margin: 0 10px 10px 10px; 
-  font-size: 24px; 
-  display: block; 
+label {
+  margin: 0 10px 5px 0;
+  font-size: 24px;
+  display: block;
   font-weight: bold !important;
   font-family: Arial;
 }
 
-span { 
-  margin: 0 0px 0px 10px; 
-  font-size: 42px; 
-  font-family: Arial 
+span {
+  margin: 0 0 0 10px;
+  font-size: 42px;
+  font-family: Arial
 }
 
-stat { 
-  margin: 0 0px 0px 10px; 
-  font-size: 36px; 
-  font-family: Arial 
+stat {
+  margin: 0 0px 0px 10px;
+  font-size: 36px;
+  font-family: Arial
 }
 
-select { 
-  margin: 0 10px 10px 10px; 
-  padding: 5px; 
-  font-size: 36px; 
-  width: 350px 
+select {
+  margin: 0 10px 10px 10px;
+  padding: 5px;
+  font-size: 36px;
+  width: 350px
 }

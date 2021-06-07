@@ -8,20 +8,11 @@
 
 <body>
     <div style="padding: 0 0 25px 0;">
-      <h1>A1 <strat id="TesterGroup"></strat></h1>
+      <h1><strat id="TesterGroup"></strat></h1>
     </div>
 
-    <div style="padding: 25px 0 50px 0;">
-      <label>S1</label>
-      <select onChange="window.location.href=this.value">
-        	<option value="heavy.html">Heavy</option>
-        	<option value="significant.html">Significant</option>
-        	<option value="moderate.html" selected>Moderate</option>
-      </select>
-    </div>
-
-    <div style="padding: 0 0 25px 0;">
-      <label>S2</label>
+    <div>
+      <label>Maximum Dead Lift (lbs.)</label>
       <input id="A"
       	type="number"
           class="form-control formBlock"
@@ -33,7 +24,8 @@
       <stat id="MDLid"></stat>
       <br>
 
-      <input id="Q"
+      <label>Standing Power Throw (meters)</label>
+      <input id="B"
       	type="number"
           class="form-control formBlock"
           placeholder="SPT"
@@ -44,17 +36,7 @@
       <stat id="SPTid"></stat>
       <br>
 
-      <input id="B"
-        type="number"
-          class="form-control formBlock"
-          placeholder="Sit-Ups"
-          required=""
-          min="1"
-          max="300"
-          onkeyup="if(parseInt(this.value) > 300){ this.value = 300; return false; }">
-      <stat id="SitUp"></stat>
-      <br>
-
+      <label>Army Extension / T Push-Up (reps)</label>
       <input id="C"
       	type="number"
           class="form-control formBlock"
@@ -64,11 +46,9 @@
           max="60"
           onkeyup="if(parseInt(this.value) > 60){ this.value = 60; return false; }"
           >
-      <stat id="HRP"></stat>
-    </div>
+      <stat id="HRPid"></stat>
 
-    <div style="padding: 0 0 25px 0;">
-      <label>S3</label>
+      <label>Sprint Drag Carry</label>
       <input id="D"
       	type="number"
           class="form-control formBlock"
@@ -78,9 +58,6 @@
           max="59"
           onkeyup="if(parseInt(this.value) > 59){ this.value = 59; return false; }"
           >
-      <stat id="SDC"></stat>
-      <br>
-
       <input id="E"
       	type="number"
       	class="form-control formBlock"
@@ -90,9 +67,9 @@
           max="59"
           onkeyup="if(parseInt(this.value) > 59){ this.value = 59; return false; }"
           >
-    </div>
+      <stat id="SDCid"></stat>
 
-    <div>
+      <label>Leg Tuck (reps)</label>
       <input id="F"
       	type="number"
           class="form-control formBlock"
@@ -102,11 +79,9 @@
           max="20"
           onkeyup="if(parseInt(this.value) > 20){ this.value = 20; return false; }"
           >
-      <stat id="LTK"></stat>
-    </div>
+      <stat id="LTKid"></stat>
 
-    <div style="padding: 0 0 25px 0;">
-      <label>S4</label>
+      <label>2 Mile Run</label>
       <input id="G"
       	type="number"
           class="form-control formBlock"
@@ -116,9 +91,6 @@
           max="59"
           onkeyup="if(parseInt(this.value) > 59){ this.value = 59; return false; }"
           >
-      <stat id="RunTime"></stat>
-      <br>
-
       <input id="H"
       	type="number"
       	class="form-control formBlock"
@@ -128,6 +100,7 @@
           max="59"
           onkeyup="if(parseInt(this.value) > 59){ this.value = 59; return false; }"
           >
+      <stat id="RunTime"></stat>
     </div>
 
     <label>Result:</label>
