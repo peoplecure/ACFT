@@ -14,10 +14,10 @@ $(window).load(function(){
 
 	    //MDL
 	    const mdled = isNaN(mdl) ? '' : '';
-	    document.getElementById("MDLid").innerHTML = mdled;
-	    if (mdl === 340) {document.getElementById('MDLid').innerHTML = "100";}
-			if (mdl >= 330) {document.getElementById('MDLid').innerHTML = '97';}
-	    if (mdl >= 320) {document.getElementById('MDLid').innerHTML = '94';}
+	    document.getElementById('MDLid').innerHTML = mdled;
+	    if (mdl >= 340) {document.getElementById('MDLid').innerHTML = '100';}
+			if (mdl <= 339 & mdl >= 330) {document.getElementById('MDLid').innerHTML = '97';}
+	    if (mdl <= 329 & mdl >= 320) {document.getElementById('MDLid').innerHTML = '94';}
 	    if (mdl === 310) {document.getElementById('MDLid').innerHTML = '92';}
 	    if (mdl === 300) {document.getElementById('MDLid').innerHTML = '90';}
 	    if (mdl === 290) {document.getElementById('MDLid').innerHTML = '88';}
@@ -42,7 +42,9 @@ $(window).load(function(){
 	    if (mdl === 100) {document.getElementById('MDLid').innerHTML = '20';}
 	    if (mdl ===  90) {document.getElementById('MDLid').innerHTML = '10';}
 	    if (mdl <=   80) {document.getElementById('MDLid').innerHTML = '0';}
-	    //SPT
+			if (spt === null || mdl === "") {document.getElementById("MDLid").innerHTML = "";}
+
+			//SPT
 	    const spted = isNaN(spt) ? '' : '';
 	    document.getElementById("SPTid").innerHTML = spted;
 	    if (spt >= 44) {document.getElementById("SPTid").innerHTML = "1";}
