@@ -101,47 +101,21 @@ $(window).load(function(){
 	    if (sec === null || sec === "") {document.getElementById("RunTime").innerHTML = "";}
 
 	    //Total Score
-	    var mdlpoint = document.getElementById("MDLid").innerHTML;
-	    var sptpoint = document.getElementById("SPTid").innerHTML;
-	    var hrppoint = document.getElementById("HRPid").innerHTML;
-	    var sdcpoint = document.getElementById("SDCid").innerHTML;
-	    var ltkpoint = document.getElementById("LTKid").innerHTML;
-	    var runpoint = document.getElementById("RunTime").innerHTML;
+	    var mdlpoint = Number(document.getElementById("MDLid").innerHTML);
+	    var sptpoint = Number(document.getElementById("SPTid").innerHTML);
+	    var hrppoint = Number(document.getElementById("HRPid").innerHTML);
+	    var sdcpoint = Number(document.getElementById("SDCid").innerHTML);
+	    var ltkpoint = Number(document.getElementById("LTKid").innerHTML);
+	    var runpoint = Number(document.getElementById("RunTime").innerHTML);
 
-	    var p;
-	    var s;
-	    var c;
-	    var r;
-	    const add = Number((p +s +c +r) || NaN);
-	    const final = isNaN(add) ? '' : '';
-      document.getElementById("Score").innerHTML = final;
-
-	    if (mdlpoint == "1") {p = 4};
-	    if (mdlpoint == "1") {p = 3};
-	    if (mdlpoint == "1") {p = 2};
-	    if (mdlpoint == "1") {p = 1};
-	    if (mdlpoint == "1") {p = 0};
-
-	    if (sptpoint == "1") {s = 4};
-	    if (sptpoint == "1") {s = 3};
-	    if (sptpoint == "1") {s = 2};
-	    if (sptpoint == "1") {s = 1};
-	    if (sptpoint == "1") {s = 0};
-
-	    if (hrppoint == "1") {c = 4};
-	    if (hrppoint == "1") {c = 3};
-	    if (hrppoint == "1") {c = 2};
-	    if (hrppoint == "1") {c = 1};
-	    if (hrppoint == "1") {c = 0};
-
-	    if (runpoint == "1") {r = 4};
-	    if (runpoint == "1") {r = 3};
-	    if (runpoint == "1") {r = 2};
-	    if (runpoint == "1") {r = 1};
-	    if (runpoint == "1") {r = 0};
-
-	//document.getElementById("Score").innerHTML = final;
-	$('#Score').html(Number(p + s + c + r));
+	    const add = Number((mdlpoint + sptpoint + hrppoint +
+													sdcpoint + ltkpoint + runpoint
+													));
+	    const add_isNA = isNaN(add) ? '' : '';
+			const final = add
+			const percent = (add/6) * 100
+      //document.getElementById("Score").innerHTML = percent;
+			$('#Score').html(final);
 
 	});
 });

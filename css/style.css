@@ -57,7 +57,7 @@ stat {
 }
 
 select {
-  margin: 0 10px 10px 10px;
+  margin: 0 10px 10px 0;
   padding: 5px;
   font-size: 36px;
   width: 350px
