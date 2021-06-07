@@ -15,7 +15,7 @@ $(window).load(function(){
 	    //MDL
 	    const mdled = isNaN(mdl) ? '' : '';
 	    document.getElementById('MDLid').innerHTML = mdled;
-			if (mdl === 340) {document.getElementById('MDLid').innerHTML = '100';}
+			if (mdl >= 340) {document.getElementById('MDLid').innerHTML = '100';}
 			if (mdl < 340 & mdl >= 330) {document.getElementById('MDLid').innerHTML = '97';}
 			if (mdl < 330 & mdl >= 320) {document.getElementById('MDLid').innerHTML = '94';}
 			if (mdl < 320 & mdl >= 310) {document.getElementById('MDLid').innerHTML = '92';}
@@ -47,7 +47,7 @@ $(window).load(function(){
 			//SPT
 	    const spted = isNaN(spt) ? '' : '';
 	    document.getElementById("SPTid").innerHTML = spted;
-			if (spt === 12.5) {document.getElementById('SPTid').innerHTML = '100';}
+			if (spt >= 12.5) {document.getElementById('SPTid').innerHTML = '100';}
 			if (spt < 12.5 & spt >= 12.4) {document.getElementById('SPTid').innerHTML = '99';}
 			if (spt < 12.4 & spt >= 12.2) {document.getElementById('SPTid').innerHTML = '98';}
 			if (spt < 12.2 & spt >= 12.1) {document.getElementById('SPTid').innerHTML = '97';}
@@ -105,11 +105,57 @@ $(window).load(function(){
 	    //HRP
 	    const hrped = isNaN(hrp) ? '' : '';
 	    document.getElementById("HRPid").innerHTML = hrped;
-	    if (hrp >= 4) {document.getElementById("HRPid").innerHTML = "1";}
-	    if (hrp === 3) {document.getElementById("HRPid").innerHTML = "1";}
-	    if (hrp === 2) {document.getElementById("HRPid").innerHTML = "1";}
-	    if (hrp === 1) {document.getElementById("HRPid").innerHTML = "1";}
-	    if (hrp === 0) {document.getElementById("HRPid").innerHTML = "1";}
+			if (hrp >= 60) {document.getElementById('HRPid').innerHTML = '100';}
+			if (hrp < 60 & hrp >= 59) {document.getElementById('HRPid').innerHTML = '99';}
+			if (hrp < 59 & hrp >= 58) {document.getElementById('HRPid').innerHTML = '98';}
+			if (hrp < 58 & hrp >= 57) {document.getElementById('HRPid').innerHTML = '97';}
+			if (hrp < 57 & hrp >= 56) {document.getElementById('HRPid').innerHTML = '96';}
+			if (hrp < 56 & hrp >= 55) {document.getElementById('HRPid').innerHTML = '95';}
+			if (hrp < 55 & hrp >= 54) {document.getElementById('HRPid').innerHTML = '94';}
+			if (hrp < 54 & hrp >= 53) {document.getElementById('HRPid').innerHTML = '93';}
+			if (hrp < 53 & hrp >= 52) {document.getElementById('HRPid').innerHTML = '92';}
+			if (hrp < 52 & hrp >= 51) {document.getElementById('HRPid').innerHTML = '91';}
+			if (hrp < 51 & hrp >= 50) {document.getElementById('HRPid').innerHTML = '90';}
+			if (hrp < 50 & hrp >= 49) {document.getElementById('HRPid').innerHTML = '89';}
+			if (hrp < 49 & hrp >= 48) {document.getElementById('HRPid').innerHTML = '88';}
+			if (hrp < 48 & hrp >= 47) {document.getElementById('HRPid').innerHTML = '87';}
+			if (hrp < 47 & hrp >= 46) {document.getElementById('HRPid').innerHTML = '86';}
+			if (hrp < 46 & hrp >= 45) {document.getElementById('HRPid').innerHTML = '85';}
+			if (hrp < 45 & hrp >= 44) {document.getElementById('HRPid').innerHTML = '84';}
+			if (hrp < 44 & hrp >= 43) {document.getElementById('HRPid').innerHTML = '83';}
+			if (hrp < 43 & hrp >= 42) {document.getElementById('HRPid').innerHTML = '82';}
+			if (hrp < 42 & hrp >= 41) {document.getElementById('HRPid').innerHTML = '81';}
+			if (hrp < 41 & hrp >= 40) {document.getElementById('HRPid').innerHTML = '80';}
+			if (hrp < 40 & hrp >= 39) {document.getElementById('HRPid').innerHTML = '79';}
+			if (hrp < 39 & hrp >= 38) {document.getElementById('HRPid').innerHTML = '78';}
+			if (hrp < 38 & hrp >= 37) {document.getElementById('HRPid').innerHTML = '77';}
+			if (hrp < 37 & hrp >= 36) {document.getElementById('HRPid').innerHTML = '76';}
+			if (hrp < 36 & hrp >= 35) {document.getElementById('HRPid').innerHTML = '75';}
+			if (hrp < 35 & hrp >= 34) {document.getElementById('HRPid').innerHTML = '74';}
+			if (hrp < 34 & hrp >= 33) {document.getElementById('HRPid').innerHTML = '73';}
+			if (hrp < 33 & hrp >= 32) {document.getElementById('HRPid').innerHTML = '72';}
+			if (hrp < 32 & hrp >= 31) {document.getElementById('HRPid').innerHTML = '71';}
+			if (hrp < 31 & hrp >= 30) {document.getElementById('HRPid').innerHTML = '70';}
+			if (hrp < 30 & hrp >= 28) {document.getElementById('HRPid').innerHTML = '69';}
+			if (hrp < 28 & hrp >= 26) {document.getElementById('HRPid').innerHTML = '68';}
+			if (hrp < 26 & hrp >= 24) {document.getElementById('HRPid').innerHTML = '67';}
+			if (hrp < 24 & hrp >= 22) {document.getElementById('HRPid').innerHTML = '66';}
+			if (hrp < 22 & hrp >= 20) {document.getElementById('HRPid').innerHTML = '65';}
+			if (hrp < 20 & hrp >= 18) {document.getElementById('HRPid').innerHTML = '64';}
+			if (hrp < 18 & hrp >= 16) {document.getElementById('HRPid').innerHTML = '63';}
+			if (hrp < 16 & hrp >= 14) {document.getElementById('HRPid').innerHTML = '62';}
+			if (hrp < 14 & hrp >= 12) {document.getElementById('HRPid').innerHTML = '61';}
+			if (hrp < 12 & hrp >= 10) {document.getElementById('HRPid').innerHTML = '60';}
+			if (hrp < 10 & hrp >= 9) {document.getElementById('HRPid').innerHTML = '55';}
+			if (hrp < 9 & hrp >= 8) {document.getElementById('HRPid').innerHTML = '50';}
+			if (hrp < 8 & hrp >= 7) {document.getElementById('HRPid').innerHTML = '45';}
+			if (hrp < 7 & hrp >= 6) {document.getElementById('HRPid').innerHTML = '40';}
+			if (hrp < 6 & hrp >= 5) {document.getElementById('HRPid').innerHTML = '35';}
+			if (hrp < 5 & hrp >= 4) {document.getElementById('HRPid').innerHTML = '30';}
+			if (hrp < 4 & hrp >= 3) {document.getElementById('HRPid').innerHTML = '25';}
+			if (hrp < 3 & hrp >= 2) {document.getElementById('HRPid').innerHTML = '20';}
+			if (hrp < 2 & hrp >= 1) {document.getElementById('HRPid').innerHTML = '15';}
+			if (hrp < 1) {document.getElementById('HRPid').innerHTML = '0';}
 	    if (hrp === null || hrp === "") {document.getElementById("HRPid").innerHTML = "";}
 
 	    //SDC
