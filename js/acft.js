@@ -164,37 +164,224 @@ $(window).load(function(){
 	    const SDCtotal = SDCmin + SDCsec;
 	    const SDCspeed = isNaN(SDCtotal) ? '' : '';
 	    document.getElementById("SDCid").innerHTML = SDCspeed;
-	    if (SDCtotal <= 770) {document.getElementById("SDCid").innerHTML = "1";}
-	    if (SDCtotal <= 864 & SDCtotal >= 771) {document.getElementById("SDCid").innerHTML = "1";}
-	    if (SDCtotal <= 926 & SDCtotal >= 865) {document.getElementById("SDCid").innerHTML = "1";}
-	    if (SDCtotal <= 993 & SDCtotal >= 927) {document.getElementById("SDCid").innerHTML = "1";}
-	    if (SDCtotal >= 994) {document.getElementById("SDCid").innerHTML = "1";}
+			if (SDCtotal <= 93) {document.getElementById('SDCid').innerHTML = '100';}
+			if (SDCtotal > 93 & SDCtotal <= 96) {document.getElementById('SDCid').innerHTML = '99';}
+			if (SDCtotal > 96 & SDCtotal <= 99) {document.getElementById('SDCid').innerHTML = '98';}
+			if (SDCtotal > 99 & SDCtotal <= 101) {document.getElementById('SDCid').innerHTML = '97';}
+			if (SDCtotal > 101 & SDCtotal <= 103) {document.getElementById('SDCid').innerHTML = '96';}
+			if (SDCtotal > 103 & SDCtotal <= 105) {document.getElementById('SDCid').innerHTML = '95';}
+			if (SDCtotal > 105 & SDCtotal <= 106) {document.getElementById('SDCid').innerHTML = '94';}
+			if (SDCtotal > 106 & SDCtotal <= 107) {document.getElementById('SDCid').innerHTML = '93';}
+			if (SDCtotal > 107 & SDCtotal <= 108) {document.getElementById('SDCid').innerHTML = '92';}
+			if (SDCtotal > 108 & SDCtotal <= 109) {document.getElementById('SDCid').innerHTML = '91';}
+			if (SDCtotal > 109 & SDCtotal <= 110) {document.getElementById('SDCid').innerHTML = '90';}
+			if (SDCtotal > 110 & SDCtotal <= 111) {document.getElementById('SDCid').innerHTML = '89';}
+			if (SDCtotal > 111 & SDCtotal <= 112) {document.getElementById('SDCid').innerHTML = '88';}
+			if (SDCtotal > 112 & SDCtotal <= 113) {document.getElementById('SDCid').innerHTML = '87';}
+			if (SDCtotal > 113 & SDCtotal <= 114) {document.getElementById('SDCid').innerHTML = '86';}
+			if (SDCtotal > 114 & SDCtotal <= 115) {document.getElementById('SDCid').innerHTML = '85';}
+			if (SDCtotal > 115 & SDCtotal <= 116) {document.getElementById('SDCid').innerHTML = '84';}
+			if (SDCtotal > 116 & SDCtotal <= 117) {document.getElementById('SDCid').innerHTML = '83';}
+			if (SDCtotal > 117 & SDCtotal <= 118) {document.getElementById('SDCid').innerHTML = '82';}
+			if (SDCtotal > 118 & SDCtotal <= 119) {document.getElementById('SDCid').innerHTML = '81';}
+			if (SDCtotal > 119 & SDCtotal <= 120) {document.getElementById('SDCid').innerHTML = '80';}
+			if (SDCtotal > 120 & SDCtotal <= 121) {document.getElementById('SDCid').innerHTML = '79';}
+			if (SDCtotal > 121 & SDCtotal <= 122) {document.getElementById('SDCid').innerHTML = '78';}
+			if (SDCtotal > 122 & SDCtotal <= 123) {document.getElementById('SDCid').innerHTML = '77';}
+			if (SDCtotal > 123 & SDCtotal <= 124) {document.getElementById('SDCid').innerHTML = '76';}
+			if (SDCtotal > 124 & SDCtotal <= 125) {document.getElementById('SDCid').innerHTML = '75';}
+			if (SDCtotal > 125 & SDCtotal <= 126) {document.getElementById('SDCid').innerHTML = '74';}
+			if (SDCtotal > 126 & SDCtotal <= 127) {document.getElementById('SDCid').innerHTML = '73';}
+			if (SDCtotal > 127 & SDCtotal <= 128) {document.getElementById('SDCid').innerHTML = '72';}
+			if (SDCtotal > 128 & SDCtotal <= 129) {document.getElementById('SDCid').innerHTML = '71';}
+			if (SDCtotal > 129 & SDCtotal <= 130) {document.getElementById('SDCid').innerHTML = '70';}
+			if (SDCtotal > 130 & SDCtotal <= 134) {document.getElementById('SDCid').innerHTML = '69';}
+			if (SDCtotal > 134 & SDCtotal <= 138) {document.getElementById('SDCid').innerHTML = '68';}
+			if (SDCtotal > 138 & SDCtotal <= 142) {document.getElementById('SDCid').innerHTML = '67';}
+			if (SDCtotal > 142 & SDCtotal <= 146) {document.getElementById('SDCid').innerHTML = '66';}
+			if (SDCtotal > 146 & SDCtotal <= 150) {document.getElementById('SDCid').innerHTML = '65';}
+			if (SDCtotal > 150 & SDCtotal <= 155) {document.getElementById('SDCid').innerHTML = '64';}
+			if (SDCtotal > 155 & SDCtotal <= 160) {document.getElementById('SDCid').innerHTML = '63';}
+			if (SDCtotal > 160 & SDCtotal <= 165) {document.getElementById('SDCid').innerHTML = '62';}
+			if (SDCtotal > 165 & SDCtotal <= 170) {document.getElementById('SDCid').innerHTML = '61';}
+			if (SDCtotal > 170 & SDCtotal <= 180) {document.getElementById('SDCid').innerHTML = '60';}
+			if (SDCtotal > 180 & SDCtotal <= 181) {document.getElementById('SDCid').innerHTML = '59';}
+			if (SDCtotal > 181 & SDCtotal <= 182) {document.getElementById('SDCid').innerHTML = '58';}
+			if (SDCtotal > 182 & SDCtotal <= 183) {document.getElementById('SDCid').innerHTML = '57';}
+			if (SDCtotal > 183 & SDCtotal <= 184) {document.getElementById('SDCid').innerHTML = '56';}
+			if (SDCtotal > 184 & SDCtotal <= 185) {document.getElementById('SDCid').innerHTML = '55';}
+			if (SDCtotal > 185 & SDCtotal <= 186) {document.getElementById('SDCid').innerHTML = '54';}
+			if (SDCtotal > 186 & SDCtotal <= 187) {document.getElementById('SDCid').innerHTML = '53';}
+			if (SDCtotal > 187 & SDCtotal <= 188) {document.getElementById('SDCid').innerHTML = '52';}
+			if (SDCtotal > 188 & SDCtotal <= 189) {document.getElementById('SDCid').innerHTML = '51';}
+			if (SDCtotal > 189 & SDCtotal <= 190) {document.getElementById('SDCid').innerHTML = '50';}
+			if (SDCtotal > 190 & SDCtotal <= 191) {document.getElementById('SDCid').innerHTML = '48';}
+			if (SDCtotal > 191 & SDCtotal <= 192) {document.getElementById('SDCid').innerHTML = '46';}
+			if (SDCtotal > 192 & SDCtotal <= 193) {document.getElementById('SDCid').innerHTML = '44';}
+			if (SDCtotal > 193 & SDCtotal <= 194) {document.getElementById('SDCid').innerHTML = '42';}
+			if (SDCtotal > 194 & SDCtotal <= 195) {document.getElementById('SDCid').innerHTML = '40';}
+			if (SDCtotal > 195 & SDCtotal <= 196) {document.getElementById('SDCid').innerHTML = '38';}
+			if (SDCtotal > 196 & SDCtotal <= 197) {document.getElementById('SDCid').innerHTML = '36';}
+			if (SDCtotal > 197 & SDCtotal <= 198) {document.getElementById('SDCid').innerHTML = '34';}
+			if (SDCtotal > 198 & SDCtotal <= 199) {document.getElementById('SDCid').innerHTML = '32';}
+			if (SDCtotal > 199 & SDCtotal <= 200) {document.getElementById('SDCid').innerHTML = '30';}
+			if (SDCtotal > 200 & SDCtotal <= 201) {document.getElementById('SDCid').innerHTML = '28';}
+			if (SDCtotal > 201 & SDCtotal <= 202) {document.getElementById('SDCid').innerHTML = '26';}
+			if (SDCtotal > 202 & SDCtotal <= 203) {document.getElementById('SDCid').innerHTML = '24';}
+			if (SDCtotal > 203 & SDCtotal <= 204) {document.getElementById('SDCid').innerHTML = '22';}
+			if (SDCtotal > 204 & SDCtotal <= 205) {document.getElementById('SDCid').innerHTML = '20';}
+			if (SDCtotal > 205 & SDCtotal <= 206) {document.getElementById('SDCid').innerHTML = '18';}
+			if (SDCtotal > 206 & SDCtotal <= 207) {document.getElementById('SDCid').innerHTML = '16';}
+			if (SDCtotal > 207 & SDCtotal <= 208) {document.getElementById('SDCid').innerHTML = '14';}
+			if (SDCtotal > 208 & SDCtotal <= 209) {document.getElementById('SDCid').innerHTML = '12';}
+			if (SDCtotal > 209 & SDCtotal <= 210) {document.getElementById('SDCid').innerHTML = '10';}
+			if (SDCtotal > 210 & SDCtotal <= 211) {document.getElementById('SDCid').innerHTML = '8';}
+			if (SDCtotal > 211 & SDCtotal <= 212) {document.getElementById('SDCid').innerHTML = '6';}
+			if (SDCtotal > 212 & SDCtotal <= 213) {document.getElementById('SDCid').innerHTML = '4';}
+			if (SDCtotal > 213 & SDCtotal <= 214) {document.getElementById('SDCid').innerHTML = '2';}
+			if (SDCtotal > 214) {document.getElementById('SDCid').innerHTML = '0';}
 	    if (SDCmin === null || SDCmin === "") {document.getElementById("SDCid").innerHTML = "";}
 	    if (SDCsec === null || SDCsec === "") {document.getElementById("SDCid").innerHTML = "";}
 
 	    //LTK
 	    const ltked = isNaN(ltk) ? '' : '';
 	    document.getElementById("LTKid").innerHTML = ltked;
-	    if (ltk >= 4) {document.getElementById("LTKid").innerHTML = "1";}
-	    if (ltk === 3) {document.getElementById("LTKid").innerHTML = "1";}
-	    if (ltk === 2) {document.getElementById("LTKid").innerHTML = "1";}
-	    if (ltk === 1) {document.getElementById("LTKid").innerHTML = "1";}
-	    if (ltk === 0) {document.getElementById("LTKid").innerHTML = "1";}
+			if (ltk === 20) {document.getElementById('LTKid').innerHTML = '100';}
+			if (ltk < 20 & ltk >= 19) {document.getElementById('LTKid').innerHTML = '98';}
+			if (ltk < 19 & ltk >= 18) {document.getElementById('LTKid').innerHTML = '96';}
+			if (ltk < 18 & ltk >= 17) {document.getElementById('LTKid').innerHTML = '94';}
+			if (ltk < 17 & ltk >= 16) {document.getElementById('LTKid').innerHTML = '92';}
+			if (ltk < 16 & ltk >= 15) {document.getElementById('LTKid').innerHTML = '90';}
+			if (ltk < 15 & ltk >= 14) {document.getElementById('LTKid').innerHTML = '88';}
+			if (ltk < 14 & ltk >= 13) {document.getElementById('LTKid').innerHTML = '86';}
+			if (ltk < 13 & ltk >= 12) {document.getElementById('LTKid').innerHTML = '84';}
+			if (ltk < 12 & ltk >= 11) {document.getElementById('LTKid').innerHTML = '82';}
+			if (ltk < 11 & ltk >= 10) {document.getElementById('LTKid').innerHTML = '80';}
+			if (ltk < 10 & ltk >= 9) {document.getElementById('LTKid').innerHTML = '78';}
+			if (ltk < 9 & ltk >= 8) {document.getElementById('LTKid').innerHTML = '76';}
+			if (ltk < 8 & ltk >= 7) {document.getElementById('LTKid').innerHTML = '74';}
+			if (ltk < 7 & ltk >= 6) {document.getElementById('LTKid').innerHTML = '72';}
+			if (ltk < 6 & ltk >= 5) {document.getElementById('LTKid').innerHTML = '70';}
+			if (ltk < 5 & ltk >= 4) {document.getElementById('LTKid').innerHTML = '68';}
+			if (ltk < 4 & ltk >= 3) {document.getElementById('LTKid').innerHTML = '65';}
+			if (ltk < 3 & ltk >= 2) {document.getElementById('LTKid').innerHTML = '62';}
+			if (ltk < 2 & ltk >= 1) {document.getElementById('LTKid').innerHTML = '60';}
+			if (ltk < 1) {document.getElementById('LTKid').innerHTML = 0;}
 	    if (ltk === null || ltk === "") {document.getElementById("LTKid").innerHTML = "";}
 
+			//PLK
+
+
+
 	    //Run Time
-	    const min = 60 * Number($('#G').val() || NaN);
-	    const sec = Number($('#H').val() || NaN);
-	    const total = min + sec;
-	    const speed = isNaN(total) ? '' : '';
-	    document.getElementById("RunTime").innerHTML = speed;
-	    if (total <= 770) {document.getElementById("RunTime").innerHTML = "1";}
-	    if (total <= 864 & total >= 771) {document.getElementById("RunTime").innerHTML = "1";}
-	    if (total <= 926 & total >= 865) {document.getElementById("RunTime").innerHTML = "1";}
-	    if (total <= 993 & total >= 927) {document.getElementById("RunTime").innerHTML = "1";}
-	    if (total >= 994) {document.getElementById("RunTime").innerHTML = "1";}
-	    if (min === null || min === "") {document.getElementById("RunTime").innerHTML = "";}
-	    if (sec === null || sec === "") {document.getElementById("RunTime").innerHTML = "";}
+	    const TwoMRmin = 60 * Number($('#G').val() || NaN);
+	    const TwoMRsec = Number($('#H').val() || NaN);
+	    const TwoMRtotal = TwoMRmin + TwoMRsec;
+	    const TwoMRspeed = isNaN(TwoMRtotal) ? '' : '';
+	    document.getElementById("RunTime").innerHTML = TwoMRspeed;
+			if (TwoMRtotal <= 810) {document.getElementById('RunTime').innerHTML = '100';}
+			if (TwoMRtotal > 810 & TwoMRtotal <= 819) {document.getElementById('RunTime').innerHTML = '99';}
+			if (TwoMRtotal > 819 & TwoMRtotal <= 828) {document.getElementById('RunTime').innerHTML = '98';}
+			if (TwoMRtotal > 828 & TwoMRtotal <= 837) {document.getElementById('RunTime').innerHTML = '97';}
+			if (TwoMRtotal > 837 & TwoMRtotal <= 846) {document.getElementById('RunTime').innerHTML = '96';}
+			if (TwoMRtotal > 846 & TwoMRtotal <= 855) {document.getElementById('RunTime').innerHTML = '95';}
+			if (TwoMRtotal > 855 & TwoMRtotal <= 864) {document.getElementById('RunTime').innerHTML = '94';}
+			if (TwoMRtotal > 864 & TwoMRtotal <= 873) {document.getElementById('RunTime').innerHTML = '93';}
+			if (TwoMRtotal > 873 & TwoMRtotal <= 882) {document.getElementById('RunTime').innerHTML = '92';}
+			if (TwoMRtotal > 882 & TwoMRtotal <= 891) {document.getElementById('RunTime').innerHTML = '91';}
+			if (TwoMRtotal > 891 & TwoMRtotal <= 900) {document.getElementById('RunTime').innerHTML = '90';}
+			if (TwoMRtotal > 900 & TwoMRtotal <= 909) {document.getElementById('RunTime').innerHTML = '89';}
+			if (TwoMRtotal > 909 & TwoMRtotal <= 918) {document.getElementById('RunTime').innerHTML = '88';}
+			if (TwoMRtotal > 918 & TwoMRtotal <= 927) {document.getElementById('RunTime').innerHTML = '87';}
+			if (TwoMRtotal > 927 & TwoMRtotal <= 936) {document.getElementById('RunTime').innerHTML = '86';}
+			if (TwoMRtotal > 936 & TwoMRtotal <= 945) {document.getElementById('RunTime').innerHTML = '85';}
+			if (TwoMRtotal > 945 & TwoMRtotal <= 954) {document.getElementById('RunTime').innerHTML = '84';}
+			if (TwoMRtotal > 954 & TwoMRtotal <= 963) {document.getElementById('RunTime').innerHTML = '83';}
+			if (TwoMRtotal > 963 & TwoMRtotal <= 972) {document.getElementById('RunTime').innerHTML = '82';}
+			if (TwoMRtotal > 972 & TwoMRtotal <= 981) {document.getElementById('RunTime').innerHTML = '81';}
+			if (TwoMRtotal > 981 & TwoMRtotal <= 990) {document.getElementById('RunTime').innerHTML = '80';}
+			if (TwoMRtotal > 990 & TwoMRtotal <= 999) {document.getElementById('RunTime').innerHTML = '79';}
+			if (TwoMRtotal > 999 & TwoMRtotal <= 1008) {document.getElementById('RunTime').innerHTML = '78';}
+			if (TwoMRtotal > 1008 & TwoMRtotal <= 1017) {document.getElementById('RunTime').innerHTML = '77';}
+			if (TwoMRtotal > 1017 & TwoMRtotal <= 1026) {document.getElementById('RunTime').innerHTML = '76';}
+			if (TwoMRtotal > 1026 & TwoMRtotal <= 1035) {document.getElementById('RunTime').innerHTML = '75';}
+			if (TwoMRtotal > 1035 & TwoMRtotal <= 1044) {document.getElementById('RunTime').innerHTML = '74';}
+			if (TwoMRtotal > 1044 & TwoMRtotal <= 1053) {document.getElementById('RunTime').innerHTML = '73';}
+			if (TwoMRtotal > 1053 & TwoMRtotal <= 1062) {document.getElementById('RunTime').innerHTML = '72';}
+			if (TwoMRtotal > 1062 & TwoMRtotal <= 1071) {document.getElementById('RunTime').innerHTML = '71';}
+			if (TwoMRtotal > 1071 & TwoMRtotal <= 1080) {document.getElementById('RunTime').innerHTML = '70';}
+			if (TwoMRtotal > 1080 & TwoMRtotal <= 1092) {document.getElementById('RunTime').innerHTML = '69';}
+			if (TwoMRtotal > 1092 & TwoMRtotal <= 1104) {document.getElementById('RunTime').innerHTML = '68';}
+			if (TwoMRtotal > 1104 & TwoMRtotal <= 1116) {document.getElementById('RunTime').innerHTML = '67';}
+			if (TwoMRtotal > 1116 & TwoMRtotal <= 1128) {document.getElementById('RunTime').innerHTML = '66';}
+			if (TwoMRtotal > 1128 & TwoMRtotal <= 1140) {document.getElementById('RunTime').innerHTML = '65';}
+			if (TwoMRtotal > 1140 & TwoMRtotal <= 1164) {document.getElementById('RunTime').innerHTML = '64';}
+			if (TwoMRtotal > 1164 & TwoMRtotal <= 1188) {document.getElementById('RunTime').innerHTML = '63';}
+			if (TwoMRtotal > 1188 & TwoMRtotal <= 1212) {document.getElementById('RunTime').innerHTML = '62';}
+			if (TwoMRtotal > 1212 & TwoMRtotal <= 1236) {document.getElementById('RunTime').innerHTML = '61';}
+			if (TwoMRtotal > 1236 & TwoMRtotal <= 1260) {document.getElementById('RunTime').innerHTML = '60';}
+			if (TwoMRtotal > 1260 & TwoMRtotal <= 1261) {document.getElementById('RunTime').innerHTML = '59';}
+			if (TwoMRtotal > 1261 & TwoMRtotal <= 1263) {document.getElementById('RunTime').innerHTML = '58';}
+			if (TwoMRtotal > 1263 & TwoMRtotal <= 1265) {document.getElementById('RunTime').innerHTML = '57';}
+			if (TwoMRtotal > 1265 & TwoMRtotal <= 1267) {document.getElementById('RunTime').innerHTML = '56';}
+			if (TwoMRtotal > 1267 & TwoMRtotal <= 1269) {document.getElementById('RunTime').innerHTML = '55';}
+			if (TwoMRtotal > 1269 & TwoMRtotal <= 1270) {document.getElementById('RunTime').innerHTML = '54';}
+			if (TwoMRtotal > 1270 & TwoMRtotal <= 1272) {document.getElementById('RunTime').innerHTML = '53';}
+			if (TwoMRtotal > 1272 & TwoMRtotal <= 1274) {document.getElementById('RunTime').innerHTML = '52';}
+			if (TwoMRtotal > 1274 & TwoMRtotal <= 1276) {document.getElementById('RunTime').innerHTML = '51';}
+			if (TwoMRtotal > 1276 & TwoMRtotal <= 1278) {document.getElementById('RunTime').innerHTML = '50';}
+			if (TwoMRtotal > 1278 & TwoMRtotal <= 1279) {document.getElementById('RunTime').innerHTML = '49';}
+			if (TwoMRtotal > 1279 & TwoMRtotal <= 1281) {document.getElementById('RunTime').innerHTML = '48';}
+			if (TwoMRtotal > 1281 & TwoMRtotal <= 1283) {document.getElementById('RunTime').innerHTML = '47';}
+			if (TwoMRtotal > 1283 & TwoMRtotal <= 1285) {document.getElementById('RunTime').innerHTML = '46';}
+			if (TwoMRtotal > 1285 & TwoMRtotal <= 1287) {document.getElementById('RunTime').innerHTML = '45';}
+			if (TwoMRtotal > 1287 & TwoMRtotal <= 1288) {document.getElementById('RunTime').innerHTML = '44';}
+			if (TwoMRtotal > 1288 & TwoMRtotal <= 1290) {document.getElementById('RunTime').innerHTML = '43';}
+			if (TwoMRtotal > 1290 & TwoMRtotal <= 1292) {document.getElementById('RunTime').innerHTML = '42';}
+			if (TwoMRtotal > 1292 & TwoMRtotal <= 1294) {document.getElementById('RunTime').innerHTML = '41';}
+			if (TwoMRtotal > 1294 & TwoMRtotal <= 1296) {document.getElementById('RunTime').innerHTML = '40';}
+			if (TwoMRtotal > 1296 & TwoMRtotal <= 1297) {document.getElementById('RunTime').innerHTML = '39';}
+			if (TwoMRtotal > 1297 & TwoMRtotal <= 1299) {document.getElementById('RunTime').innerHTML = '38';}
+			if (TwoMRtotal > 1299 & TwoMRtotal <= 1301) {document.getElementById('RunTime').innerHTML = '37';}
+			if (TwoMRtotal > 1301 & TwoMRtotal <= 1303) {document.getElementById('RunTime').innerHTML = '36';}
+			if (TwoMRtotal > 1303 & TwoMRtotal <= 1305) {document.getElementById('RunTime').innerHTML = '35';}
+			if (TwoMRtotal > 1305 & TwoMRtotal <= 1306) {document.getElementById('RunTime').innerHTML = '34';}
+			if (TwoMRtotal > 1306 & TwoMRtotal <= 1308) {document.getElementById('RunTime').innerHTML = '33';}
+			if (TwoMRtotal > 1308 & TwoMRtotal <= 1310) {document.getElementById('RunTime').innerHTML = '32';}
+			if (TwoMRtotal > 1310 & TwoMRtotal <= 1312) {document.getElementById('RunTime').innerHTML = '31';}
+			if (TwoMRtotal > 1312 & TwoMRtotal <= 1314) {document.getElementById('RunTime').innerHTML = '30';}
+			if (TwoMRtotal > 1314 & TwoMRtotal <= 1315) {document.getElementById('RunTime').innerHTML = '29';}
+			if (TwoMRtotal > 1315 & TwoMRtotal <= 1317) {document.getElementById('RunTime').innerHTML = '28';}
+			if (TwoMRtotal > 1317 & TwoMRtotal <= 1319) {document.getElementById('RunTime').innerHTML = '27';}
+			if (TwoMRtotal > 1319 & TwoMRtotal <= 1321) {document.getElementById('RunTime').innerHTML = '26';}
+			if (TwoMRtotal > 1321 & TwoMRtotal <= 1323) {document.getElementById('RunTime').innerHTML = '25';}
+			if (TwoMRtotal > 1323 & TwoMRtotal <= 1324) {document.getElementById('RunTime').innerHTML = '24';}
+			if (TwoMRtotal > 1324 & TwoMRtotal <= 1326) {document.getElementById('RunTime').innerHTML = '23';}
+			if (TwoMRtotal > 1326 & TwoMRtotal <= 1328) {document.getElementById('RunTime').innerHTML = '22';}
+			if (TwoMRtotal > 1328 & TwoMRtotal <= 1330) {document.getElementById('RunTime').innerHTML = '21';}
+			if (TwoMRtotal > 1330 & TwoMRtotal <= 1332) {document.getElementById('RunTime').innerHTML = '20';}
+			if (TwoMRtotal > 1332 & TwoMRtotal <= 1333) {document.getElementById('RunTime').innerHTML = '19';}
+			if (TwoMRtotal > 1333 & TwoMRtotal <= 1335) {document.getElementById('RunTime').innerHTML = '18';}
+			if (TwoMRtotal > 1335 & TwoMRtotal <= 1337) {document.getElementById('RunTime').innerHTML = '17';}
+			if (TwoMRtotal > 1337 & TwoMRtotal <= 1339) {document.getElementById('RunTime').innerHTML = '16';}
+			if (TwoMRtotal > 1339 & TwoMRtotal <= 1341) {document.getElementById('RunTime').innerHTML = '15';}
+			if (TwoMRtotal > 1341 & TwoMRtotal <= 1342) {document.getElementById('RunTime').innerHTML = '14';}
+			if (TwoMRtotal > 1342 & TwoMRtotal <= 1344) {document.getElementById('RunTime').innerHTML = '13';}
+			if (TwoMRtotal > 1344 & TwoMRtotal <= 1346) {document.getElementById('RunTime').innerHTML = '12';}
+			if (TwoMRtotal > 1346 & TwoMRtotal <= 1348) {document.getElementById('RunTime').innerHTML = '11';}
+			if (TwoMRtotal > 1348 & TwoMRtotal <= 1350) {document.getElementById('RunTime').innerHTML = '10';}
+			if (TwoMRtotal > 1350 & TwoMRtotal <= 1351) {document.getElementById('RunTime').innerHTML = '9';}
+			if (TwoMRtotal > 1351 & TwoMRtotal <= 1353) {document.getElementById('RunTime').innerHTML = '8';}
+			if (TwoMRtotal > 1353 & TwoMRtotal <= 1355) {document.getElementById('RunTime').innerHTML = '7';}
+			if (TwoMRtotal > 1355 & TwoMRtotal <= 1357) {document.getElementById('RunTime').innerHTML = '6';}
+			if (TwoMRtotal > 1357 & TwoMRtotal <= 1359) {document.getElementById('RunTime').innerHTML = '5';}
+			if (TwoMRtotal > 1359 & TwoMRtotal <= 1360) {document.getElementById('RunTime').innerHTML = '4';}
+			if (TwoMRtotal > 1360 & TwoMRtotal <= 1362) {document.getElementById('RunTime').innerHTML = '3';}
+			if (TwoMRtotal > 1362 & TwoMRtotal <= 1364) {document.getElementById('RunTime').innerHTML = '2';}
+			if (TwoMRtotal > 1364 & TwoMRtotal <= 1366) {document.getElementById('RunTime').innerHTML = '1';}
+			if (TwoMRtotal > 1366) {document.getElementById('RunTime').innerHTML = '0';}
+	    if (TwoMRmin === null || TwoMRmin === "") {document.getElementById("RunTime").innerHTML = "";}
+	    if (TwoMRsec === null || TwoMRsec === "") {document.getElementById("RunTime").innerHTML = "";}
 
 	    //Total Score
 	    var mdlpoint = Number(document.getElementById("MDLid").innerHTML);
@@ -204,14 +391,14 @@ $(window).load(function(){
 	    var ltkpoint = Number(document.getElementById("LTKid").innerHTML);
 	    var runpoint = Number(document.getElementById("RunTime").innerHTML);
 
-	    const add = Number((mdlpoint + sptpoint + hrppoint +
+	    const LTKadd = Number((mdlpoint + sptpoint + hrppoint +
 													sdcpoint + ltkpoint + runpoint
 													));
-	    const add_isNA = isNaN(add) ? '' : '';
-			const final = add
-			const percent = (add/6) * 100
+	    const LTKadd_isNA = isNaN(LTKadd) ? '' : '';
+			const LTKfinal = LTKadd
+			const LTKpercent = (LTKadd/6) * 100
       //document.getElementById("Score").innerHTML = percent;
-			$('#Score').html(final);
+			$('#LTKScore').html(LTKfinal);
 
 	});
 });
