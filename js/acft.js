@@ -1,6 +1,6 @@
 $(window).load(function(){
 
-	$('#TesterGroup').html("Enter ALL fields");
+	$('#TesterGroup').html("");
 
 	$('input').on('change keyup', function(){
 
