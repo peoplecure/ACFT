@@ -1,129 +1,255 @@
 <html>
+
 <head>
-<title>ACFT Calculator</title>
-<script type="text/javascript">
-  window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};
-  heap.load("3446542680");
-</script>
-<script type="text/javascript" src="./js/jquery-1.9.1.js"></script>
-<script type="text/javascript" src="./js/acft.js"></script>
-<link rel="stylesheet" type="text/css" href="./css/style.css">
+  <title>ACFT Calculator</title>
+
+  <!-- Link javascript -->
+  <script type="text/javascript">
+    window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};
+    heap.load("3446542680");
+  </script>
+  <script type="text/javascript" src="./js/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="./js/acft.js"></script>
+  <script type="text/javascript" src="./js/slider.js"></script>
+
+  <!-- Link css -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/slider.css">
 </head>
 
 <body>
-    <div style="padding: 0 0 25px 0;">
-      <h1><strat id="TesterGroup"></strat></h1>
+
+  <div style = "padding: 0 0 25px 0;">
+    <h1><strat id = "TesterGroup"></strat></h1>
+  </div>
+
+  <div>
+
+    <!-- Maximum Dead Lift -->
+    <label>Maximum Dead Lift</label>
+    <input id = "A"
+      type        = "number"
+      class       = "form-control formBlock"
+      min         = "0"
+      max         = "340"
+      onkeyup     = "if(parseInt(this.value) > 340){
+                      MDLslider.value = 340 ;
+                      this.value = 340 ;
+                      return false
+                    } ;
+                    MDLslider.value = A.value"
+      required/
+    >
+    <div class = "measurement">lbs</div>
+    <div class = "points">
+      <stat id = "MDLid"></stat><div class = "measurement"> pts.</div>
     </div>
+    <input id = "MDLslider"
+      class   = "slider"
+      type    = "range"
+      step    = "1"
+      value   = "0"
+      min     = "0"
+      max     = "340"
+      oninput = "A.value = MDLslider.value"
+    >
+    <hr class = "dotted">
+    <br>
 
-    <div>
-      <label>Maximum Dead Lift (lbs.)</label>
-      <input id="A"
-      	type="number"
-          class="form-control formBlock"
-          placeholder="MDL"
-          required=""
-          min="1"
-          max="340"
-          onkeyup="if(parseInt(this.value) > 340){ this.value = 340; return false; }">
-      <stat id="MDLid"></stat>
-      <br>
-
-      <label>Standing Power Throw (meters)</label>
-      <input id="B"
-      	type="number"
-          class="form-control formBlock"
-          placeholder="SPT"
-          required=""
-          min="1"
-          max="12.5"
-          onkeyup="if(parseInt(this.value) > 12.5){ this.value = 12.5; return false; }">
-      <stat id="SPTid"></stat>
-      <br>
-
-      <label>Hand Release Push-Up (reps)</label>
-      <input id="C"
-      	type="number"
-          class="form-control formBlock"
-          placeholder="HRP"
-          required=""
-          min="1"
-          max="60"
-          onkeyup="if(parseInt(this.value) > 60){ this.value = 60; return false; }"
-          >
-      <stat id="HRPid"></stat>
-
-      <label>Sprint Drag Carry</label>
-      <input id="D"
-      	type="number"
-          class="form-control formBlock"
-          placeholder="Minutes"
-          required=""
-          min="1"
-          max="59"
-          onkeyup="if(parseInt(this.value) > 59){ this.value = 59; return false; }"
-          >
-      <input id="E"
-      	type="number"
-      	class="form-control formBlock"
-      	placeholder="Seconds"
-          required=""
-          min="1"
-          max="59"
-          onkeyup="if(parseInt(this.value) > 59){ this.value = 59; return false; }"
-          >
-      <stat id="SDCid"></stat>
-
-      <label>Leg Tuck (reps)</label>
-      <input id="F"
-      	type="number"
-          class="form-control formBlock"
-          placeholder="LTK"
-          required=""
-          min="1"
-          max="20"
-          onkeyup="if(parseInt(this.value) > 20){ this.value = 20; return false; }"
-          >
-      <stat id="LTKid"></stat>
-
-      <label>2 Mile Run</label>
-      <input id="G"
-      	type="number"
-          class="form-control formBlock"
-          placeholder="Minutes"
-          required=""
-          min="1"
-          max="59"
-          onkeyup="if(parseInt(this.value) > 59){ this.value = 59; return false; }"
-          >
-      <input id="H"
-      	type="number"
-      	class="form-control formBlock"
-      	placeholder="Seconds"
-          required=""
-          min="1"
-          max="59"
-          onkeyup="if(parseInt(this.value) > 59){ this.value = 59; return false; }"
-          >
-      <stat id="RunTime"></stat>
+    <!-- Standing Power Throw -->
+    <label>Standing Power Throw</label>
+    <input id = "B"
+    	type        = "number"
+      class       = "form-control formBlock"
+      required    = ""
+      min         = "0"
+      max         = "12.5"
+      onkeyup     = "if(parseInt(this.value) > 12.5){
+                      SPTslider.value = 12.5 ;
+                      return false
+                    } ;
+                    SPTslider.value = B.value"
+    >
+    <div class = "measurement">m</div>
+    <div class = "points">
+      <stat id = "SPTid"></stat><div class = "measurement"> pts.</div>
     </div>
+    <input id = "SPTslider"
+      class   = "slider"
+      type    = "range"
+      step    = ".5"
+      value   = "0"
+      min     = "0"
+      max     = "12.5"
+      oninput = "B.value = SPTslider.value"
+    >
+    <hr class = "dotted">
+    <br>
 
-    <label>Result:</label>
-    <span id="LTKScore" style="text-align: center; font-size: 72px"></span>
-
-    <div style="font-style: Arial; width: 700px; margin: 50px 0 50px 0;">
-      <p></p>
+    <!-- Hand Release Push up -->
+    <label>Hand Release Push-Up</label>
+    <input id = "C"
+    	type        = "number"
+      class       = "form-control formBlock"
+      required    = ""
+      min         = "1"
+      max         = "60"
+      onkeyup     = "if(parseInt(this.value) > 60){
+                      HRPslider.value = 60 ;
+                      return false
+                    } ;
+                    HRPslider.value = C.value"
+    >
+    <div class = "measurement">reps</div>
+    <div class = "points">
+      <stat id = "HRPid"></stat><div class = "measurement"> pts.</div>
     </div>
+    <input id = "HRPslider"
+      class   = "slider"
+      type    = "range"
+      step    = "1"
+      value   = "0"
+      min     = "0"
+      max     = "60"
+      oninput = "C.value = HRPslider.value"
+    >
+    <hr class = "dotted">
+    <br>
 
-    <script>
-      // results
-      if (window.parent && window.parent.parent){
-        window.parent.parent.postMessage(["resultsFrame", {
-          height: document.body.getBoundingClientRect().height,
-          slug: ""
-        }], "*")
-      }
-      window.name = "result"
-    </script>
+    <!-- Sprint Drag Carry -->
+    <label>Sprint Drag Carry</label>
+    <input id = "D"
+    	type        = "number"
+      class       = "form-control formBlock"
+      required    = ""
+      min         = "1"
+      max         = "59"
+      onkeyup     = "if(parseInt(this.value) > 59){
+                      this.value = 59;
+                      return false
+                    }
+                    "
+    >
+    <div class = "measurement">min</div>
+    <input id = "E"
+    	type        = "number"
+    	class       = "form-control formBlock"
+      required    = ""
+      min         = "1"
+      max         = "59"
+      onkeyup     = "if(parseInt(this.value) > 59){
+                      this.value = 59;
+                      return false
+                    }
+                    "
+    >
+    <div class = "measurement">sec</div>
+    <div class = "points">
+      <stat id = "SDCid"></stat><div class = "measurement"> pts.</div>
+    </div>
+    <input id = "SDCslider"
+      class = "slider"
+      type  = "range"
+      step  = "1"
+      value = "0"
+      min   = "0"
+      max   = "220"
+    >
+    <hr class = "dotted">
+    <br>
+
+    <!-- Leg Tuck (reps)-->
+    <label>Leg Tuck</label>
+    <input id = "F"
+    	type        = "number"
+      class       = "form-control formBlock"
+      required    = ""
+      min         = "1"
+      max         = "20"
+      onkeyup     = "if(parseInt(this.value) > 20){
+                      LTKslider.value = 20 ;
+                      this.value = 20 ;
+                      return false
+                    }
+                    LTKslider.value = F.value"
+    >
+    <div class = "measurement">reps</div>
+    <div class = "points">
+      <stat id = "LTKid"></stat><div class = "measurement"> pts.</div>
+    </div>
+    <input id = "LTKslider"
+      class   = "slider"
+      type    = "range"
+      step    = "1"
+      value   = "0"
+      min     = "0"
+      max     = "20"
+      oninput = "F.value = LTKslider.value"
+    >
+    <hr class = "dotted">
+    <br>
+
+    <!-- 2 Mile Run -->
+    <label>2 Mile Run</label>
+    <input id="G"
+    	type        = "number"
+      class       = "form-control formBlock"
+      required    = ""
+      min         = "1"
+      max         = "59"
+      onkeyup     = "if(parseInt(this.value) > 59){
+                      this.value = 59;
+                      return false
+                    }
+                    "
+    >
+    <div class = "measurement">min</div>
+    <input id="H"
+    	type        = "number"
+    	class       = "form-control formBlock"
+      required    = ""
+      min         = "1"
+      max         = "59"
+      onkeyup     = "if(parseInt(this.value) > 59){
+                      this.value = 59;
+                      return false
+                    }
+                    "
+    >
+    <div class = "measurement">min</div>
+    <div class = "points">
+      <stat id = "RunTime"></stat><div class = "measurement"> pts.</div>
+    </div>
+    <input id = "RunTimeslider"
+      class = "slider"
+      type  = "range"
+      step  = "1"
+      value = "0"
+      min   = "0"
+      max   = "1367"
+    >
+    <hr class = "dotted">
+    <br>
+
+  </div>
+
+<label>Total Score:</label>
+<span id="LTKScore" style="text-align: center; font-size: 72px"></span>
+
+<div style="font-style: Arial; width: 700px; margin: 50px 0 50px 0;">
+  <p></p>
+</div>
+
+<script>
+  // results
+  if (window.parent && window.parent.parent){
+    window.parent.parent.postMessage(["resultsFrame", {
+      height: document.body.getBoundingClientRect().height,
+      slug: ""
+    }], "*")
+  }
+  window.name = "result"
+</script>
 
 </body>
 

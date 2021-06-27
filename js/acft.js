@@ -2,7 +2,7 @@ $(window).load(function(){
 
 	$('#TesterGroup').html("Enter ALL fields");
 
-	$('input').keyup(function(){
+	$('input').on('change keyup', function(){
 
 	    //Scores
 	    const mdl = Number($('#A').val() || NaN);
