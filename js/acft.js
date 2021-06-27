@@ -246,7 +246,7 @@ $(window).load(function(){
 	    //LTK
 	    const ltked = isNaN(ltk) ? '' : '';
 	    document.getElementById("LTKid").innerHTML = ltked;
-			if (ltk === 20) {document.getElementById('LTKid').innerHTML = '100';}
+			if (ltk >= 20) {document.getElementById('LTKid').innerHTML = '100';}
 			if (ltk < 20 & ltk >= 19) {document.getElementById('LTKid').innerHTML = '98';}
 			if (ltk < 19 & ltk >= 18) {document.getElementById('LTKid').innerHTML = '96';}
 			if (ltk < 18 & ltk >= 17) {document.getElementById('LTKid').innerHTML = '94';}
