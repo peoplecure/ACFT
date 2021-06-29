@@ -8,7 +8,7 @@ $(window).load(function() {
 			return false
 		};
 		MDLslider.value = A.value ;
-		if(A.value == "") {
+		if(A.value == "" | A.value == null) {
 			MDLslider.value = 0
 		};
 	};
@@ -21,7 +21,7 @@ $(window).load(function() {
 			return false
 		} ;
 		SPTslider.value = B.value ;
-		if(B.value == "") {
+		if(B.value == "" | B.value == null) {
 			SPTslider.value = 0
 		};
 	};
@@ -33,9 +33,9 @@ $(window).load(function() {
 			HRPslider.value = 60 ;
 			return false
 		} ;
-		HRPslider.value = C.value
 		HRPslider.value = C.value ;
-		if(C.value == "") {
+		HRPslider.value = C.value ;
+		if(C.value == "" | C.value == null) {
 			HRPslider.value = 0
 		};
 	};
