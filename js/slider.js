@@ -34,7 +34,6 @@ $(window).load(function() {
 			return false
 		} ;
 		HRPslider.value = C.value ;
-		HRPslider.value = C.value ;
 		if(C.value == "" | C.value == null) {
 			HRPslider.value = 0
 		};
@@ -89,6 +88,19 @@ $(window).load(function() {
 		};
 		if((D.value == "" | D.value == null) & (E.value =="" | E.value == null)) {
 			SDCslider.value = 0
+		};
+	};
+	//////////////////////////////////////////////////////////////////////////////
+
+	// Leg Tuck //////////////////////////////////////////////////////////////////
+	F.onkeyup = function() {
+		if(parseInt(this.value) > 20){
+			LTKslider.value = 20 ;
+			return false
+		}
+		LTKslider.value = F.value
+		if(F.value == "" | F.value == null) {
+			LTKslider.value = 0
 		};
 	};
 	//////////////////////////////////////////////////////////////////////////////
