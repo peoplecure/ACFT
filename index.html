@@ -28,16 +28,10 @@
     <!-- Maximum Dead Lift -->
     <label>Maximum Dead Lift</label>
     <input id = "A"
-      type        = "number"
-      class       = "form-control formBlock"
-      min         = "0"
-      max         = "340"
-      onkeyup     = "if(parseInt(this.value) > 340){
-                      MDLslider.value = 340 ;
-                      this.value = 340 ;
-                      return false
-                    } ;
-                    MDLslider.value = A.value"
+      type    = "number"
+      class   = "form-control formBlock"
+      min     = "0"
+      max     = "340"
       required/
     >
     <div class = "measurement">lbs</div>
@@ -64,11 +58,6 @@
       required    = ""
       min         = "0"
       max         = "12.5"
-      onkeyup     = "if(parseInt(this.value) > 12.5){
-                      SPTslider.value = 12.5 ;
-                      return false
-                    } ;
-                    SPTslider.value = B.value"
     >
     <div class = "measurement">m</div>
     <div class = "points">
@@ -94,11 +83,6 @@
       required    = ""
       min         = "1"
       max         = "60"
-      onkeyup     = "if(parseInt(this.value) > 60){
-                      HRPslider.value = 60 ;
-                      return false
-                    } ;
-                    HRPslider.value = C.value"
     >
     <div class = "measurement">reps</div>
     <div class = "points">

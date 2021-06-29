@@ -1,5 +1,47 @@
-$(window).load(function(){
+$(window).load(function() {
 
+	// Maximum Dead Lift /////////////////////////////////////////////////////////
+	A.onkeyup = function() {
+		if(parseInt(this.value) > 340){
+			MDLslider.value = 340 ;
+			this.value = 340 ;
+			return false
+		};
+		MDLslider.value = A.value ;
+		if(A.value == "") {
+			MDLslider.value = 0
+		};
+	};
+	//////////////////////////////////////////////////////////////////////////////
+
+	// Standing Power Throw //////////////////////////////////////////////////////
+	B.onkeyup = function() {
+		if(parseInt(this.value) > 12.5){
+			SPTslider.value = 12.5 ;
+			return false
+		} ;
+		SPTslider.value = B.value ;
+		if(B.value == "") {
+			SPTslider.value = 0
+		};
+	};
+	//////////////////////////////////////////////////////////////////////////////
+
+	// Hand Release Push Up //////////////////////////////////////////////////////
+	C.onkeyup = function() {
+		if(parseInt(this.value) > 60){
+			HRPslider.value = 60 ;
+			return false
+		} ;
+		HRPslider.value = C.value
+		HRPslider.value = C.value ;
+		if(C.value == "") {
+			HRPslider.value = 0
+		};
+	};
+	//////////////////////////////////////////////////////////////////////////////
+
+  // SDC Run Time //////////////////////////////////////////////////////////////
 	document.querySelector('#SDCslider').addEventListener('input', function(e) {
 	  let mins = e.target.value / 60;
 	  let xtra = e.target.value % 60
@@ -14,7 +56,6 @@ $(window).load(function(){
 	  document.querySelector('#H').value = Math.floor(xtra);
 	});
 
-  // SDC Run Time
 	D.onkeyup = function() {
 		if(parseInt(this.value) > 59) {
 			this.value = 59;
@@ -32,6 +73,7 @@ $(window).load(function(){
 			SDCslider.value = 0
 		};
 	};
+
 	E.onkeyup = function() {
 		if(parseInt(this.value) > 59) {
 			this.value = 59;
@@ -49,7 +91,10 @@ $(window).load(function(){
 			SDCslider.value = 0
 		};
 	};
+	//////////////////////////////////////////////////////////////////////////////
 
-	// 2 Mile Run Time
+	// 2 Mile Run Time ///////////////////////////////////////////////////////////
 
+
+  //////////////////////////////////////////////////////////////////////////////
 });
