@@ -5,7 +5,6 @@ $(window).load(function() {
 		if(parseInt(this.value) > 340){
 			MDLslider.value = 340 ;
 			this.value = 340 ;
-			return false
 		};
 		MDLslider.value = A.value ;
 		if(A.value == "" | A.value == null) {
@@ -18,7 +17,6 @@ $(window).load(function() {
 	B.onkeyup = function() {
 		if(parseInt(this.value) > 12.5){
 			SPTslider.value = 12.5 ;
-			return false
 		} ;
 		SPTslider.value = B.value ;
 		if(B.value == "" | B.value == null) {
@@ -31,7 +29,6 @@ $(window).load(function() {
 	C.onkeyup = function() {
 		if(parseInt(this.value) > 60){
 			HRPslider.value = 60 ;
-			return false
 		} ;
 		HRPslider.value = C.value ;
 		if(C.value == "" | C.value == null) {
@@ -94,11 +91,12 @@ $(window).load(function() {
 
 	// Leg Tuck //////////////////////////////////////////////////////////////////
 	F.onkeyup = function() {
+		LTKslider.value = F.value
+
 		if(parseInt(this.value) > 20){
 			LTKslider.value = 20 ;
-			return false
 		}
-		LTKslider.value = F.value
+
 		if(F.value == "" | F.value == null) {
 			LTKslider.value = 0
 		};
