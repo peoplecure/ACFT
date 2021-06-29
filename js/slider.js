@@ -45,13 +45,6 @@ $(window).load(function() {
 	  document.querySelector('#E').value = Math.floor(xtra);
 	});
 
-	document.querySelector('#RunTimeslider').addEventListener('input', function(e) {
-	  let mins = e.target.value / 60;
-	  let xtra = e.target.value % 60
-	  document.querySelector('#G').value = Math.floor(mins);
-	  document.querySelector('#H').value = Math.floor(xtra);
-	});
-
 	D.onkeyup = function() {
 		if(parseInt(this.value) > 59) {
 			this.value = 59;
@@ -91,12 +84,10 @@ $(window).load(function() {
 
 	// Leg Tuck //////////////////////////////////////////////////////////////////
 	F.onkeyup = function() {
-		LTKslider.value = F.value
-
 		if(parseInt(this.value) > 20){
 			LTKslider.value = 20 ;
 		}
-
+		LTKslider.value = F.value
 		if(F.value == "" | F.value == null) {
 			LTKslider.value = 0
 		};
@@ -104,7 +95,48 @@ $(window).load(function() {
 	//////////////////////////////////////////////////////////////////////////////
 
 	// 2 Mile Run Time ///////////////////////////////////////////////////////////
+	document.querySelector('#RunTimeslider').addEventListener('input', function(e) {
+	  let mins = e.target.value / 60;
+	  let xtra = e.target.value % 60
+	  document.querySelector('#G').value = Math.floor(mins);
+	  document.querySelector('#H').value = Math.floor(xtra);
+	});
 
+	G.onkeyup = function() {
+		if(parseInt(this.value) > 59) {
+			this.value = 59;
+		};
+		if(H.value.length == "" | H.value.length == null) {
+			RunTimeslider.value = (parseFloat(G.value) * parseFloat(60))
+		};
+		if(H.value != "") {
+			RunTimeslider.value = (parseFloat(G.value) * parseFloat(60)) + parseFloat(H.value)
+		};
+		if(G.value == "" | G.value == null) {
+			RunTimeslider.value = parseFloat(H.value)
+		};
+		if((G.value == "" | G.value == null) & (H.value =="" | H.value == null)) {
+			RunTimeslider.value = 0
+		};
+	};
+
+	H.onkeyup = function() {
+		if(parseInt(this.value) > 59) {
+			this.value = 59;
+		};
+		if(G.value.length == "" | G.value.length == null) {
+			RunTimeslider.value = parseFloat(H.value)
+		};
+		if(G.value != "") {
+			RunTimeslider.value = (parseFloat(G.value) * parseFloat(60)) + parseFloat(H.value)
+		};
+		if(H.value == "" | H.value == null) {
+			RunTimeslider.value = parseFloat(G.value) * parseFloat(60)
+		};
+		if((G.value == "" | G.value == null) & (H.value =="" | H.value == null)) {
+			RunTimeslider.value = 0
+		};
+	};
 
   //////////////////////////////////////////////////////////////////////////////
 });
