@@ -1,6 +1,13 @@
 $(window).load(function(){
 
-	$('#TesterGroup').html("");
+	// results
+  if (window.parent && window.parent.parent){
+    window.parent.parent.postMessage(["resultsFrame", {
+      height: document.body.getBoundingClientRect().height,
+      slug: ""
+    }], "*")
+  };
+  window.name = "result"
 
 	$('input').on('change keyup', function(){
 
@@ -270,8 +277,15 @@ $(window).load(function(){
 	    if (ltk === null || ltk === "") {document.getElementById("LTKid").innerHTML = "";}
 
 			//PLK
-
-
+      const PLKmin = 60 * Number($('#I').val() || NaN);
+	    const PLKsec = Number($('#J').val() || NaN);
+	    const PLKtotal = PLKmin + PLKsec;
+	    const PLKspeed = isNaN(PLKtotal) ? '' : '';
+	    document.getElementById("PLKid").innerHTML = PLKspeed;
+			if (PLKtotal <= 810) {document.getElementById('PLKid').innerHTML = '100';}
+      if (PLKtotal > 1366) {document.getElementById('PLKid').innerHTML = '0';}
+      if (PLKmin === null || PLKmin === "") {document.getElementById("PLKid").innerHTML = "";}
+      if (PLKsec === null || PLKsec === "") {document.getElementById("PLKid").innerHTML = "";}
 
 	    //Run Time
 	    const TwoMRmin = 60 * Number($('#G').val() || NaN);
@@ -389,16 +403,34 @@ $(window).load(function(){
 	    var hrppoint = Number(document.getElementById("HRPid").innerHTML);
 	    var sdcpoint = Number(document.getElementById("SDCid").innerHTML);
 	    var ltkpoint = Number(document.getElementById("LTKid").innerHTML);
+	    var plkpoint = Number(document.getElementById("PLKid").innerHTML);
 	    var runpoint = Number(document.getElementById("RunTime").innerHTML);
 
-	    const LTKadd = Number((mdlpoint + sptpoint + hrppoint +
-													sdcpoint + ltkpoint + runpoint
-													));
-	    const LTKadd_isNA = isNaN(LTKadd) ? '' : '';
-			const LTKfinal = LTKadd
-			const LTKpercent = (LTKadd/6) * 100
-      //document.getElementById("Score").innerHTML = percent;
-			$('#LTKScore').html(LTKfinal);
+      var mdlinput = document.getElementById("MDLid").value;
+
+      if (((ltkpoint >= plkpoint) || plkpoint == "" || plkpoint == null)
+        & (isNaN(mdlinput) == true))
+       {
+        const LTKadd = Number(mdlpoint + sptpoint + hrppoint +
+                            sdcpoint + ltkpoint + runpoint
+                            );
+        //const LTKadd_isNA = isNaN(LTKadd) ? '' : '';
+        const LTKfinal = LTKadd
+        //const LTKpercent = (LTKadd/6) * 100
+        //document.getElementById("Score").innerHTML = percent;
+        $('#TotalScore').html(LTKfinal);
+      };
+
+      if ((ltkpoint <= plkpoint) || ltkpoint == "" || ltkpoint == null) {
+        const PLKadd = Number(mdlpoint + sptpoint + hrppoint +
+                            sdcpoint + plkpoint + runpoint
+                            );
+        const PLKadd_isNA = isNaN(PLKadd) ? '' : '';
+        const PLKfinal = PLKadd
+        const PLKpercent = (PLKadd/6) * 100
+        //document.getElementById("Score").innerHTML = percent;
+        $('#TotalScore').html(PLKfinal);
+      };
 
 	});
 });

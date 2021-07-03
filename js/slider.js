@@ -7,7 +7,7 @@ $(window).load(function() {
 			this.value = 340 ;
 		};
 		MDLslider.value = A.value ;
-		if(A.value == "" | A.value == null) {
+		if(A.value == "" || A.value == null) {
 			MDLslider.value = 0
 		};
 	};
@@ -17,7 +17,7 @@ $(window).load(function() {
 			SPTslider.value = 12.5 ;
 		} ;
 		SPTslider.value = B.value ;
-		if(B.value == "" | B.value == null) {
+		if(B.value == "" || B.value == null) {
 			SPTslider.value = 0
 		};
 	};
@@ -27,7 +27,7 @@ $(window).load(function() {
 			HRPslider.value = 60 ;
 		} ;
 		HRPslider.value = C.value ;
-		if(C.value == "" | C.value == null) {
+		if(C.value == "" || C.value == null) {
 			HRPslider.value = 0
 		};
 	};
@@ -43,16 +43,16 @@ $(window).load(function() {
 		if(parseInt(this.value) > 59) {
 			this.value = 59;
 		};
-		if(E.value.length == "" | E.value.length == null) {
+		if(E.value.length == "" || E.value.length == null) {
 			SDCslider.value = (parseFloat(D.value) * parseFloat(60))
 		};
 		if(E.value != "") {
 			SDCslider.value = (parseFloat(D.value) * parseFloat(60)) + parseFloat(E.value)
 		};
-		if(D.value == "" | D.value == null) {
+		if(D.value == "" || D.value == null) {
 			SDCslider.value = parseFloat(E.value)
 		};
-		if((D.value == "" | D.value == null) & (E.value =="" | E.value == null)) {
+		if((D.value == "" || D.value == null) & (E.value =="" || E.value == null)) {
 			SDCslider.value = 0
 		};
 	};
@@ -61,16 +61,16 @@ $(window).load(function() {
 		if(parseInt(this.value) > 59) {
 			this.value = 59;
 		};
-		if(D.value.length == "" | D.value.length == null) {
+		if(D.value.length == "" || D.value.length == null) {
 			SDCslider.value = parseFloat(E.value)
 		};
 		if(D.value != "") {
 			SDCslider.value = (parseFloat(D.value) * parseFloat(60)) + parseFloat(E.value)
 		};
-		if(E.value == "" | E.value == null) {
+		if(E.value == "" || E.value == null) {
 			SDCslider.value = parseFloat(D.value) * parseFloat(60)
 		};
-		if((D.value == "" | D.value == null) & (E.value =="" | E.value == null)) {
+		if((D.value == "" || D.value == null) & (E.value =="" || E.value == null)) {
 			SDCslider.value = 0
 		};
 	};
@@ -80,8 +80,51 @@ $(window).load(function() {
 			LTKslider.value = 20 ;
 		}
 		LTKslider.value = F.value
-		if(F.value == "" | F.value == null) {
+		if(F.value == "" || F.value == null) {
 			LTKslider.value = 0
+		};
+	};
+	// Plank /////////////////////////////////////////////////////////////////////
+	document.querySelector('#PLKslider').addEventListener('input', function(e) {
+	  let mins = e.target.value / 60;
+	  let xtra = e.target.value % 60
+	  document.querySelector('#I').value = Math.floor(mins);
+	  document.querySelector('#J').value = Math.floor(xtra);
+	});
+
+	I.onkeyup = function() {
+		if(parseInt(this.value) > 59) {
+			this.value = 59;
+		};
+		if(J.value.length == "" || J.value.length == null) {
+			PLKslider.value = (parseFloat(I.value) * parseFloat(60))
+		};
+		if(J.value != "") {
+			PLKslider.value = (parseFloat(I.value) * parseFloat(60)) + parseFloat(J.value)
+		};
+		if(I.value == "" || I.value == null) {
+			PLKslider.value = parseFloat(J.value)
+		};
+		if((I.value == "" || I.value == null) & (J.value =="" || J.value == null)) {
+			PLKslider.value = 0
+		};
+	};
+
+	J.onkeyup = function() {
+		if(parseInt(this.value) > 59) {
+			this.value = 59;
+		};
+		if(I.value.length == "" || I.value.length == null) {
+			PLKslider.value = parseFloat(J.value)
+		};
+		if(I.value != "") {
+			PLKslider.value = (parseFloat(I.value) * parseFloat(60)) + parseFloat(J.value)
+		};
+		if(J.value == "" || J.value == null) {
+			PLKslider.value = parseFloat(I.value) * parseFloat(60)
+		};
+		if((I.value == "" || I.value == null) & (J.value =="" || J.value == null)) {
+			PLKslider.value = 0
 		};
 	};
 	// 2 Mile Run Time ///////////////////////////////////////////////////////////
@@ -96,16 +139,16 @@ $(window).load(function() {
 		if(parseInt(this.value) > 59) {
 			this.value = 59;
 		};
-		if(H.value.length == "" | H.value.length == null) {
+		if(H.value.length == "" || H.value.length == null) {
 			RunTimeslider.value = (parseFloat(G.value) * parseFloat(60))
 		};
 		if(H.value != "") {
 			RunTimeslider.value = (parseFloat(G.value) * parseFloat(60)) + parseFloat(H.value)
 		};
-		if(G.value == "" | G.value == null) {
+		if(G.value == "" || G.value == null) {
 			RunTimeslider.value = parseFloat(H.value)
 		};
-		if((G.value == "" | G.value == null) & (H.value =="" | H.value == null)) {
+		if((G.value == "" || G.value == null) & (H.value =="" || H.value == null)) {
 			RunTimeslider.value = 0
 		};
 	};
@@ -114,16 +157,16 @@ $(window).load(function() {
 		if(parseInt(this.value) > 59) {
 			this.value = 59;
 		};
-		if(G.value.length == "" | G.value.length == null) {
+		if(G.value.length == "" || G.value.length == null) {
 			RunTimeslider.value = parseFloat(H.value)
 		};
 		if(G.value != "") {
 			RunTimeslider.value = (parseFloat(G.value) * parseFloat(60)) + parseFloat(H.value)
 		};
-		if(H.value == "" | H.value == null) {
+		if(H.value == "" || H.value == null) {
 			RunTimeslider.value = parseFloat(G.value) * parseFloat(60)
 		};
-		if((G.value == "" | G.value == null) & (H.value =="" | H.value == null)) {
+		if((G.value == "" || G.value == null) & (H.value =="" || H.value == null)) {
 			RunTimeslider.value = 0
 		};
 	};

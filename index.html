@@ -27,188 +27,212 @@
   <div>
 
     <!-- Maximum Dead Lift -->
-    <label>Maximum Dead Lift</label>
-    <input id = "A"
-      type    = "number"
-      class   = "form-control formBlock"
-      min     = "0"
-      max     = "340"
-      required/
-    >
-    <div class = "measurement">lbs</div>
-    <div class = "points">
-      <stat id = "MDLid"></stat><div class = "measurement"> pts.</div>
+    <div class = "PTsegment">
+      <label>Maximum Dead Lift</label>
+      <input id = "A"
+        type    = "number"
+        min     = "0"
+        max     = "340"
+        required/
+      >
+      <div class = "measurement">lbs</div>
+      <div class = "points">
+        <stat id = "MDLid"></stat><div class = "measurement"> pts.</div>
+      </div>
+      <input id = "MDLslider"
+        class   = "slider"
+        type    = "range"
+        step    = "1"
+        value   = "0"
+        min     = "0"
+        max     = "340"
+        oninput = "A.value = MDLslider.value"
+      >
     </div>
-    <input id = "MDLslider"
-      class   = "slider"
-      type    = "range"
-      step    = "1"
-      value   = "0"
-      min     = "0"
-      max     = "340"
-      oninput = "A.value = MDLslider.value"
-    >
-    <hr class = "dotted">
-    <br>
 
     <!-- Standing Power Throw -->
-    <label>Standing Power Throw</label>
-    <input id = "B"
-    	type        = "number"
-      class       = "form-control formBlock"
-      required    = ""
-      min         = "0"
-      max         = "12.5"
-    >
-    <div class = "measurement">m</div>
-    <div class = "points">
-      <stat id = "SPTid"></stat><div class = "measurement"> pts.</div>
+    <div class = "PTsegment">
+      <label>Standing Power Throw</label>
+      <input id = "B"
+      	type        = "number"
+        class       = "form-control formBlock"
+        step        = ".1"
+        min         = "0"
+        max         = "12.5"
+        required/
+      >
+      <div class = "measurement">m</div>
+      <div class = "points">
+        <stat id = "SPTid"></stat><div class = "measurement"> pts.</div>
+      </div>
+      <input id = "SPTslider"
+        class   = "slider"
+        type    = "range"
+        step    = ".1"
+        value   = "0"
+        min     = "0"
+        max     = "12.5"
+        oninput = "B.value = SPTslider.value"
+      >
     </div>
-    <input id = "SPTslider"
-      class   = "slider"
-      type    = "range"
-      step    = ".1"
-      value   = "0"
-      min     = "0"
-      max     = "12.5"
-      oninput = "B.value = SPTslider.value"
-    >
-    <hr class = "dotted">
-    <br>
 
     <!-- Hand Release Push up -->
-    <label>Hand Release Push-Up</label>
-    <input id = "C"
-    	type        = "number"
-      class       = "form-control formBlock"
-      required    = ""
-      min         = "1"
-      max         = "60"
-    >
-    <div class = "measurement">reps</div>
-    <div class = "points">
-      <stat id = "HRPid"></stat><div class = "measurement"> pts.</div>
+    <div class = "PTsegment">
+      <label>Hand Release Push-Up</label>
+      <input id = "C"
+      	type        = "number"
+        class       = "form-control formBlock"
+        min         = "0"
+        max         = "60"
+        required/
+      >
+      <div class = "measurement">reps</div>
+      <div class = "points">
+        <stat id = "HRPid"></stat><div class = "measurement"> pts.</div>
+      </div>
+      <input id = "HRPslider"
+        class   = "slider"
+        type    = "range"
+        step    = "1"
+        value   = "0"
+        min     = "0"
+        max     = "60"
+        oninput = "C.value = HRPslider.value"
+      >
     </div>
-    <input id = "HRPslider"
-      class   = "slider"
-      type    = "range"
-      step    = "1"
-      value   = "0"
-      min     = "0"
-      max     = "60"
-      oninput = "C.value = HRPslider.value"
-    >
-    <hr class = "dotted">
-    <br>
 
     <!-- Sprint Drag Carry -->
-    <label>Sprint Drag Carry</label>
-    <input id = "D"
-    	type        = "number"
-      class       = "form-control formBlock"
-      required    = ""
-      min         = "1"
-      max         = "59"
-    >
-    <div class = "measurement">min</div>
-    <input id = "E"
-    	type        = "number"
-    	class       = "form-control formBlock"
-      required    = ""
-      min         = "1"
-      max         = "59"
-    >
-    <div class = "measurement">sec</div>
-    <div class = "points">
-      <stat id = "SDCid"></stat><div class = "measurement"> pts.</div>
+    <div class = "PTsegment">
+      <label>Sprint Drag Carry</label>
+      <input id = "D"
+      	type        = "number"
+        class       = "form-control formBlock"
+        min         = "0"
+        max         = "59"
+        required/
+      >
+      <div class = "measurement">min</div>
+      <input id = "E"
+      	type        = "number"
+      	class       = "form-control formBlock"
+        min         = "0"
+        max         = "59"
+        required/
+      >
+      <div class = "measurement">sec</div>
+      <div class = "points">
+        <stat id = "SDCid"></stat><div class = "measurement"> pts.</div>
+      </div>
+      <input id = "SDCslider"
+        class = "slider"
+        type  = "range"
+        step  = "1"
+        value = "0"
+        min   = "0"
+        max   = "215"
+      >
     </div>
-    <input id = "SDCslider"
-      class = "slider"
-      type  = "range"
-      step  = "1"
-      value = "0"
-      min   = "0"
-      max   = "215"
-    >
-    <hr class = "dotted">
-    <br>
 
     <!-- Leg Tuck (reps)-->
-    <label>Leg Tuck</label>
-    <input id = "F"
-    	type        = "number"
-      class       = "form-control formBlock"
-      required    = ""
-      min         = "1"
-      max         = "20"
-    >
-    <div class = "measurement">reps</div>
-    <div class = "points">
-      <stat id = "LTKid"></stat><div class = "measurement"> pts.</div>
+    <div class = "PTsegment">
+      <label>Leg Tuck</label>
+      <input id = "F"
+      	type        = "number"
+        class       = "form-control formBlock"
+        min         = "0"
+        max         = "20"
+        required/
+      >
+      <div class = "measurement">reps</div>
+      <div class = "points">
+        <stat id = "LTKid"></stat><div class = "measurement"> pts.</div>
+      </div>
+      <input id = "LTKslider"
+        class   = "slider"
+        type    = "range"
+        step    = "1"
+        value   = "0"
+        min     = "0"
+        max     = "20"
+        oninput = "F.value = LTKslider.value"
+      >
+
+      <hr class = "dotted">
+
+      <!-- Plank Hold (Leg Tuck Alternative) -->
+      <label>Plank Hold (Alternative to Leg Tuck)</label>
+      <input id="I"
+      	type        = "number"
+        class       = "form-control formBlock"
+        min         = "0"
+        max         = "59"
+        required/
+      >
+      <div class = "measurement">min</div>
+      <input id="J"
+      	type        = "number"
+      	class       = "form-control formBlock"
+        min         = "0"
+        max         = "59"
+        required/
+      >
+      <div class = "measurement">sec</div>
+      <div class = "points">
+        <stat id = "PLKid"></stat><div class = "measurement"> pts.</div>
+      </div>
+      <input id = "PLKslider"
+        class = "slider"
+        type  = "range"
+        step  = "1"
+        value = "0"
+        min   = "0"
+        max   = "1368"
+      >
     </div>
-    <input id = "LTKslider"
-      class   = "slider"
-      type    = "range"
-      step    = "1"
-      value   = "0"
-      min     = "0"
-      max     = "20"
-      oninput = "F.value = LTKslider.value"
-    >
-    <hr class = "dotted">
-    <br>
 
     <!-- 2 Mile Run -->
-    <label>2 Mile Run</label>
-    <input id="G"
-    	type        = "number"
-      class       = "form-control formBlock"
-      required    = ""
-      min         = "1"
-      max         = "59"
-    >
-    <div class = "measurement">min</div>
-    <input id="H"
-    	type        = "number"
-    	class       = "form-control formBlock"
-      required    = ""
-      min         = "1"
-      max         = "59"
-    >
-    <div class = "measurement">sec</div>
-    <div class = "points">
-      <stat id = "RunTime"></stat><div class = "measurement"> pts.</div>
+    <div class = "PTsegment">
+      <label>2 Mile Run</label>
+      <input id="G"
+      	type        = "number"
+        class       = "form-control formBlock"
+        min         = "0"
+        max         = "59"
+        required/
+      >
+      <div class = "measurement">min</div>
+      <input id="H"
+      	type        = "number"
+      	class       = "form-control formBlock"
+        min         = "0"
+        max         = "59"
+        required/
+      >
+      <div class = "measurement">sec</div>
+      <div class = "points">
+        <stat id = "RunTime"></stat><div class = "measurement"> pts.</div>
+      </div>
+      <input id = "RunTimeslider"
+        class = "slider"
+        type  = "range"
+        step  = "1"
+        value = "0"
+        min   = "0"
+        max   = "1368"
+      >
     </div>
-    <input id = "RunTimeslider"
-      class = "slider"
-      type  = "range"
-      step  = "1"
-      value = "0"
-      min   = "0"
-      max   = "1368"
-    >
-    <hr class = "dotted">
-    <br>
 
   </div>
 
-<label>Total Score:</label>
-<span id="LTKScore" style="text-align: center; font-size: 72px"></span>
+  <div class = "PTsegment">
+    <label>Total Score:</label>
+    <span id="TotalScore" style="text-align: center; font-size: 72px"></span>
 
-<div style="font-style: Arial; width: 700px; margin: 50px 0 50px 0;">
-  <p></p>
-</div>
+    <div style="font-style: Arial; min-width: 700px;">
+      <p></p>
+    </div>
+  </div>
 
-<script>
-  // results
-  if (window.parent && window.parent.parent){
-    window.parent.parent.postMessage(["resultsFrame", {
-      height: document.body.getBoundingClientRect().height,
-      slug: ""
-    }], "*")
-  }
-  window.name = "result"
-</script>
 
 </body>
 

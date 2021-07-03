@@ -1,6 +1,7 @@
 html {
   display: table;
   margin: 0 auto;
+  background-image: linear-gradient(360deg, #485461 0%, #28313b 74%);
 }
 
 body {
@@ -21,7 +22,12 @@ input {
   margin: 0 10px 20px 0;
   padding: 5px;
   font-size: 36px;
-  width: 85px
+  width: 75px
+}
+
+input:required:invalid {
+  border: 2px solid red;
+  -moz-box-shadow: none;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -37,7 +43,7 @@ input[type=number] {
 }
 
 label {
-  margin: 0 10px 5px 0;
+  margin: 0 10px 15px 0;
   font-size: 24px;
   display: block;
   font-weight: bold !important;
@@ -71,7 +77,8 @@ select {
 
 hr.dotted {
   border-top: 1px
-  dashed
+  dashed;
+  margin: 30px 0 20px 0;
 }
 
 .measurement {
@@ -80,5 +87,13 @@ hr.dotted {
   padding: 5px;
   font-family: Arial;
   font-size: 36px;
+  color: #2c3e50;
   width: 150px
+}
+
+.PTsegment {
+  background: #fff;
+  border-radius: 10px;
+  margin: 0 0 15px 0;
+  padding: 15px 0px 15px 20px;
 }
