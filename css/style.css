@@ -1,7 +1,7 @@
 html {
   display: table;
   margin: 0 auto;
-  background-image: linear-gradient(360deg, #485461 0%, #28313b 74%);
+  background: #28313b;
 }
 
 body {
