@@ -133,61 +133,69 @@
       >
     </div>
 
-    <!-- Leg Tuck (reps)-->
-    <div class = "PTsegment">
-      <label>Leg Tuck</label>
-      <input id = "F"
-      	type        = "number"
-        class       = "form-control formBlock"
-        min         = "0"
-        max         = "20"
-        required/
-      >
-      <div class = "measurement">reps</div>
-      <div class = "points">
-        <stat id = "LTKid"></stat><div class = "measurement"> pts.</div>
-      </div>
-      <input id = "LTKslider"
-        class   = "slider"
-        type    = "range"
-        step    = "1"
-        value   = "0"
-        min     = "0"
-        max     = "20"
-        oninput = "F.value = LTKslider.value"
-      >
 
-      <hr class = "dotted">
+    <button onclick="openTab(event, 'LTKtab'),  openTab2(event, 'LTKscore')" id="defaultOpen">Leg Tuck</button>
+    <button onclick="openTab(event, 'PLKtab'),  openTab2(event, 'PLKscore')">Plank Hold</button>
+
+    <!-- Leg Tuck (reps)-->
+    <div id="LTKtab" class="tabcontent">
+      <div class = "PTsegment">
+        <label>Leg Tuck</label>
+        <input id = "F"
+        	type        = "number"
+          class       = "form-control formBlock"
+          min         = "0"
+          max         = "20"
+          required/
+        >
+        <div class = "measurement">reps</div>
+        <div class = "points">
+          <stat id = "LTKid"></stat><div class = "measurement"> pts.</div>
+        </div>
+        <input id = "LTKslider"
+          class   = "slider"
+          type    = "range"
+          step    = "1"
+          value   = "0"
+          min     = "0"
+          max     = "20"
+          oninput = "F.value = LTKslider.value"
+        >
+      </div>
+    </div>
 
       <!-- Plank Hold (Leg Tuck Alternative) -->
-      <label>Plank Hold (Alternative to Leg Tuck)</label>
-      <input id="I"
-      	type        = "number"
-        class       = "form-control formBlock"
-        min         = "0"
-        max         = "59"
-        required/
-      >
-      <div class = "measurement">min</div>
-      <input id="J"
-      	type        = "number"
-      	class       = "form-control formBlock"
-        min         = "0"
-        max         = "59"
-        required/
-      >
-      <div class = "measurement">sec</div>
-      <div class = "points">
-        <stat id = "PLKid"></stat><div class = "measurement"> pts.</div>
+    <div id="PLKtab" class="tabcontent">
+      <div class = "PTsegment">
+        <label>Plank Hold (Alternative to Leg Tuck)</label>
+        <input id="I"
+        	type        = "number"
+          class       = "form-control formBlock"
+          min         = "0"
+          max         = "59"
+          required/
+        >
+        <div class = "measurement">min</div>
+        <input id="J"
+        	type        = "number"
+        	class       = "form-control formBlock"
+          min         = "0"
+          max         = "59"
+          required/
+        >
+        <div class = "measurement">sec</div>
+        <div class = "points">
+          <stat id = "PLKid"></stat><div class = "measurement"> pts.</div>
+        </div>
+        <input id = "PLKslider"
+          class = "slider"
+          type  = "range"
+          step  = "1"
+          value = "0"
+          min   = "0"
+          max   = "1368"
+        >
       </div>
-      <input id = "PLKslider"
-        class = "slider"
-        type  = "range"
-        step  = "1"
-        value = "0"
-        min   = "0"
-        max   = "1368"
-      >
     </div>
 
     <!-- 2 Mile Run -->
@@ -224,16 +232,54 @@
 
   </div>
 
-  <div class = "PTsegment">
-    <label>Total Score:</label>
-    <span id="TotalScore" style="text-align: center; font-size: 72px"></span>
+  <div id="LTKscore" class="tabcontent2">
+    <div class = "PTsegment">
+      <label>Total Score:</label>
+      <span id="LTKScore" style="text-align: center; font-size: 72px"></span>
 
-    <div style="font-style: Arial; width: 700px;">
-      <p></p>
+      <div style="font-style: Arial; width: 700px;">
+        <p></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="PLKscore" class="tabcontent2">
+    <div class = "PTsegment">
+      <label>Total Score:</label>
+      <span id="PLKScore" style="text-align: center; font-size: 72px"></span>
+
+      <div style="font-style: Arial; width: 700px;">
+        <p></p>
+      </div>
     </div>
   </div>
 
 
 </body>
+
+<script>
+
+  function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+  };
+
+  function openTab2(evt2, tabName2) {
+    var i, tabcontent2, tablinks2;
+    tabcontent2 = document.getElementsByClassName("tabcontent2");
+    for (i = 0; i < tabcontent2.length; i++) {
+      tabcontent2[i].style.display = "none";
+    }
+    document.getElementById(tabName2).style.display = "block";
+    evt.currentTarget.className += " active";
+  };
+
+  document.getElementById("defaultOpen").click();
+</script>
 
 </html>

@@ -1,14 +1,5 @@
 $(window).load(function(){
 
-	// results
-  if (window.parent && window.parent.parent){
-    window.parent.parent.postMessage(["resultsFrame", {
-      height: document.body.getBoundingClientRect().height,
-      slug: ""
-    }], "*")
-  };
-  window.name = "result"
-
 	$('input').on('change keyup', function(){
 
 	    //Scores
@@ -418,7 +409,7 @@ $(window).load(function(){
         const LTKfinal = LTKadd
         //const LTKpercent = (LTKadd/6) * 100
         //document.getElementById("Score").innerHTML = percent;
-        $('#TotalScore').html(LTKfinal);
+        $('#LTKScore').html(LTKfinal);
       };
 
       if ((ltkpoint <= plkpoint) || ltkpoint == "" || ltkpoint == null) {
@@ -429,8 +420,9 @@ $(window).load(function(){
         const PLKfinal = PLKadd
         const PLKpercent = (PLKadd/6) * 100
         //document.getElementById("Score").innerHTML = percent;
-        $('#TotalScore').html(PLKfinal);
+        $('#PLKScore').html(PLKfinal);
       };
 
 	});
+
 });
