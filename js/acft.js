@@ -441,29 +441,25 @@ $(window).load(function(){
 
       var mdlinput = document.getElementById("MDLid").value;
 
-      if (((ltkpoint >= plkpoint) || plkpoint == "" || plkpoint == null)
-        & (isNaN(mdlinput) == true))
-       {
-        const LTKadd = Number(mdlpoint + sptpoint + hrppoint +
-                            sdcpoint + ltkpoint + runpoint
-                            );
-        //const LTKadd_isNA = isNaN(LTKadd) ? '' : '';
-        const LTKfinal = LTKadd
-        //const LTKpercent = (LTKadd/6) * 100
-        //document.getElementById("Score").innerHTML = percent;
-        $('#LTKScore').html(LTKfinal);
-      };
 
-      if ((ltkpoint <= plkpoint) || ltkpoint == "" || ltkpoint == null) {
-        const PLKadd = Number(mdlpoint + sptpoint + hrppoint +
-                            sdcpoint + plkpoint + runpoint
-                            );
-        const PLKadd_isNA = isNaN(PLKadd) ? '' : '';
-        const PLKfinal = PLKadd
-        const PLKpercent = (PLKadd/6) * 100
-        //document.getElementById("Score").innerHTML = percent;
-        $('#PLKScore').html(PLKfinal);
-      };
+      const LTKadd = Number(mdlpoint + sptpoint + hrppoint +
+                          sdcpoint + ltkpoint + runpoint
+                          );
+      //const LTKadd_isNA = isNaN(LTKadd) ? '' : '';
+      const LTKfinal = LTKadd
+      //const LTKpercent = (LTKadd/6) * 100
+      //document.getElementById("Score").innerHTML = percent;
+      $('#LTKScore').html(LTKfinal);
+
+
+      const PLKadd = Number(mdlpoint + sptpoint + hrppoint +
+                          sdcpoint + plkpoint + runpoint
+                          );
+      const PLKadd_isNA = isNaN(PLKadd) ? '' : '';
+      const PLKfinal = PLKadd
+      const PLKpercent = (PLKadd/6) * 100
+      //document.getElementById("Score").innerHTML = percent;
+      $('#PLKScore').html(PLKfinal);
 
 	});
 

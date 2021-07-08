@@ -104,3 +104,13 @@ hr.dotted {
   font-weight: bold !important;
   font-family: Arial;
 }
+
+.inWindow1 {
+  width: 700px; 
+  font-style: Arial;
+}
+
+.inWindow2 {
+  width: 700px;
+  font-style: Arial;
+}
