@@ -133,14 +133,13 @@
       >
     </div>
 
-
-    <button onclick="openTab(event, 'LTKtab'),  openTab2(event, 'LTKscore')" id="defaultOpen">Leg Tuck</button>
-    <button onclick="openTab(event, 'PLKtab'),  openTab2(event, 'PLKscore')">Plank Hold</button>
-
     <!-- Leg Tuck (reps)-->
-    <div id="LTKtab" class="tabcontent">
-      <div class = "PTsegment">
-        <label>Leg Tuck</label>
+    <div class = "PTsegment">
+
+      <button class="tabClass" onclick="openTab(event, 'LTKtab'),  openTab2(event, 'LTKscore')" id="defaultOpen">Leg Tuck</button>
+      <button class="tabClass" onclick="openTab(event, 'PLKtab'),  openTab2(event, 'PLKscore')">Plank Hold</button>
+
+      <div id="LTKtab" class="tabcontent">
         <input id = "F"
         	type        = "number"
           class       = "form-control formBlock"
@@ -162,12 +161,9 @@
           oninput = "F.value = LTKslider.value"
         >
       </div>
-    </div>
 
       <!-- Plank Hold (Leg Tuck Alternative) -->
-    <div id="PLKtab" class="tabcontent">
-      <div class = "PTsegment">
-        <label>Plank Hold (Alternative to Leg Tuck)</label>
+      <div id="PLKtab" class="tabcontent">
         <input id="I"
         	type        = "number"
           class       = "form-control formBlock"
@@ -193,7 +189,7 @@
           step  = "1"
           value = "0"
           min   = "0"
-          max   = "1368"
+          max   = "260"
         >
       </div>
     </div>
@@ -276,7 +272,7 @@
       tabcontent2[i].style.display = "none";
     }
     document.getElementById(tabName2).style.display = "block";
-    evt.currentTarget.className += " active";
+    evt2.currentTarget.className += " active";
   };
 
   document.getElementById("defaultOpen").click();

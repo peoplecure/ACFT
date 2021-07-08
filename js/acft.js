@@ -273,8 +273,50 @@ $(window).load(function(){
 	    const PLKtotal = PLKmin + PLKsec;
 	    const PLKspeed = isNaN(PLKtotal) ? '' : '';
 	    document.getElementById("PLKid").innerHTML = PLKspeed;
-			if (PLKtotal <= 810) {document.getElementById('PLKid').innerHTML = '100';}
-      if (PLKtotal > 1366) {document.getElementById('PLKid').innerHTML = '0';}
+			if (PLKtotal >= 260) {document.getElementById('PLKid').innerHTML = '100';}
+			if (PLKtotal >= 257 & PLKtotal < 260) {document.getElementById('PLKid').innerHTML = '99';}
+			if (PLKtotal >= 254 & PLKtotal < 257) {document.getElementById('PLKid').innerHTML = '98';}
+			if (PLKtotal >= 251 & PLKtotal < 254) {document.getElementById('PLKid').innerHTML = '97';}
+			if (PLKtotal >= 247 & PLKtotal < 251) {document.getElementById('PLKid').innerHTML = '96';}
+			if (PLKtotal >= 244 & PLKtotal < 247) {document.getElementById('PLKid').innerHTML = '95';}
+			if (PLKtotal >= 241 & PLKtotal < 244) {document.getElementById('PLKid').innerHTML = '94';}
+			if (PLKtotal >= 238 & PLKtotal < 241) {document.getElementById('PLKid').innerHTML = '93';}
+			if (PLKtotal >= 234 & PLKtotal < 238) {document.getElementById('PLKid').innerHTML = '92';}
+			if (PLKtotal >= 231 & PLKtotal < 234) {document.getElementById('PLKid').innerHTML = '91';}
+			if (PLKtotal >= 228 & PLKtotal < 231) {document.getElementById('PLKid').innerHTML = '90';}
+			if (PLKtotal >= 224 & PLKtotal < 228) {document.getElementById('PLKid').innerHTML = '89';}
+			if (PLKtotal >= 221 & PLKtotal < 224) {document.getElementById('PLKid').innerHTML = '88';}
+			if (PLKtotal >= 218 & PLKtotal < 221) {document.getElementById('PLKid').innerHTML = '87';}
+			if (PLKtotal >= 215 & PLKtotal < 218) {document.getElementById('PLKid').innerHTML = '86';}
+			if (PLKtotal >= 211 & PLKtotal < 215) {document.getElementById('PLKid').innerHTML = '85';}
+			if (PLKtotal >= 208 & PLKtotal < 211) {document.getElementById('PLKid').innerHTML = '84';}
+			if (PLKtotal >= 205 & PLKtotal < 208) {document.getElementById('PLKid').innerHTML = '83';}
+			if (PLKtotal >= 201 & PLKtotal < 205) {document.getElementById('PLKid').innerHTML = '82';}
+			if (PLKtotal >= 198 & PLKtotal < 201) {document.getElementById('PLKid').innerHTML = '81';}
+			if (PLKtotal >= 195 & PLKtotal < 198) {document.getElementById('PLKid').innerHTML = '80';}
+			if (PLKtotal >= 192 & PLKtotal < 195) {document.getElementById('PLKid').innerHTML = '79';}
+			if (PLKtotal >= 188 & PLKtotal < 192) {document.getElementById('PLKid').innerHTML = '78';}
+			if (PLKtotal >= 185 & PLKtotal < 188) {document.getElementById('PLKid').innerHTML = '77';}
+			if (PLKtotal >= 182 & PLKtotal < 185) {document.getElementById('PLKid').innerHTML = '76';}
+			if (PLKtotal >= 178 & PLKtotal < 182) {document.getElementById('PLKid').innerHTML = '75';}
+			if (PLKtotal >= 175 & PLKtotal < 178) {document.getElementById('PLKid').innerHTML = '74';}
+			if (PLKtotal >= 172 & PLKtotal < 175) {document.getElementById('PLKid').innerHTML = '73';}
+			if (PLKtotal >= 169 & PLKtotal < 172) {document.getElementById('PLKid').innerHTML = '72';}
+			if (PLKtotal >= 165 & PLKtotal < 169) {document.getElementById('PLKid').innerHTML = '71';}
+			if (PLKtotal >= 162 & PLKtotal < 165) {document.getElementById('PLKid').innerHTML = '70';}
+			if (PLKtotal >= 159 & PLKtotal < 162) {document.getElementById('PLKid').innerHTML = '69';}
+			if (PLKtotal >= 155 & PLKtotal < 159) {document.getElementById('PLKid').innerHTML = '68';}
+			if (PLKtotal >= 152 & PLKtotal < 155) {document.getElementById('PLKid').innerHTML = '67';}
+			if (PLKtotal >= 149 & PLKtotal < 152) {document.getElementById('PLKid').innerHTML = '66';}
+			if (PLKtotal >= 146 & PLKtotal < 149) {document.getElementById('PLKid').innerHTML = '65';}
+			if (PLKtotal >= 142 & PLKtotal < 146) {document.getElementById('PLKid').innerHTML = '64';}
+			if (PLKtotal >= 139 & PLKtotal < 142) {document.getElementById('PLKid').innerHTML = '63';}
+			if (PLKtotal >= 136 & PLKtotal < 139) {document.getElementById('PLKid').innerHTML = '62';}
+			if (PLKtotal >= 132 & PLKtotal < 136) {document.getElementById('PLKid').innerHTML = '61';}
+			if (PLKtotal >= 129 & PLKtotal < 132) {document.getElementById('PLKid').innerHTML = '60';}
+			if (PLKtotal >= 126 & PLKtotal < 129) {document.getElementById('PLKid').innerHTML = '59';}
+			if (PLKtotal >= 123 & PLKtotal < 126) {document.getElementById('PLKid').innerHTML = '58';}
+			if (PLKtotal < 123) {document.getElementById('PLKid').innerHTML = '0';}
       if (PLKmin === null || PLKmin === "") {document.getElementById("PLKid").innerHTML = "";}
       if (PLKsec === null || PLKsec === "") {document.getElementById("PLKid").innerHTML = "";}
 
