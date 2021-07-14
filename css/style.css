@@ -57,13 +57,13 @@ span {
 }
 
 stat {
-  margin: 0 0px 0px 10px;
-  font-size: 36px;
-  font-family: Arial;
 }
 
 .points {
   display: inline;
+  margin: 0 10px 20px 0;
+  padding: 5px;
+  font-size: 36px;
   text-align: right;
   float: right;
 }
@@ -99,22 +99,30 @@ hr.dotted {
 }
 
 .tabClass {
-  margin: -15px 10px 15px -15px;
+  margin: -5px 10px 15px -10px;
   font-size: 24px;
   font-weight: bold !important;
   font-family: Arial;
 }
 
 /* Small devices (portrait tablets and large phones, 300px and up) */
-@media only screen and (max-width: 300px) {
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  h1 {
+    margin: 0 10px 0px 0;
+    padding: 0px;
+    font-size: 24px;
+    font-family: Arial;
+  };
+
   .inWindow {
     width: 93vw;
     font-style: Arial;
   }
-}
+};
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
   .inWindow {
     width: 700px;
     font-style: Arial;
