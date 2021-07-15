@@ -23,6 +23,7 @@ input {
   padding: 0;
   font-size: 32px;
   width: 65px;
+  text-align: center;
 }
 
 input:required:invalid {
@@ -97,7 +98,7 @@ stat {
   background: #fff;
   border-radius: 10px;
   margin: 0 0 15px 0;
-  padding: 15px 0px 15px 20px;
+  padding: 15px 20px 15px 20px;
 }
 
 .tabClass {
@@ -108,15 +109,16 @@ stat {
 }
 
 /* Small devices (portrait tablets and large phones, 300px and up) */
-@media only screen and (min-width: 300px) and (max-width: 550px) {
+@media only screen and (min-width: 300px) and (max-width: 600px) {
   h1 {
     margin: 0 10px 0 0;
     padding: 0px;
     font-size: 24px;
     font-family: Arial;
-  };
+  }
 
   .points {
+    margin: 0 5px 0 0;
     float: right;
   }
 
@@ -133,7 +135,14 @@ stat {
     background: #fff;
     border-radius: 10px;
     margin: 0 0 15px 0;
-    padding: 15px 0px 15px 10px;
+    padding: 10px 7px 15px 7px;
+  }
+
+  .tabClass {
+    margin: 0px 0px 15px 0px;
+    font-size: 24px;
+    font-weight: bold !important;
+    font-family: Arial;
   }
 
   .inWindow {
@@ -142,13 +151,3 @@ stat {
   }
 
 };
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-  .inWindow {
-    width: 700px;
-    font-style: Arial;
-  }
-
-}

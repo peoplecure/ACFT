@@ -4,9 +4,9 @@
 
 .slider {
   -webkit-appearance: none;
-  width: 100%;
+  width: 98%;
   height: 1px;
-  margin: 0 0 5px -15px;
+  margin: 0 0 5px 0px;
   padding: 5px;
   background-color: #c4a747;
   background-image: linear-gradient(315deg, #c4a747 0%, #817036 100%);
@@ -44,5 +44,5 @@
 /* Small devices (portrait tablets and large phones, 300px and up) */
 @media only screen and (min-width: 300px) and (max-width: 550px) {
   .slider {
-    margin: 0 0 5px -10px;
+    margin: 0 0 5px 0px;
 }
