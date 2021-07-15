@@ -14,15 +14,15 @@ body {
 h1 {
   margin: 0 10px 0px 0;
   padding: 0px;
-  font-size: 42px;
+  font-size: 32px;
   font-family: Arial;
 }
 
 input {
-  margin: 0 10px 20px 0;
-  padding: 5px;
-  font-size: 36px;
-  width: 75px;
+  margin: 0 0 20px 0;
+  padding: 0;
+  font-size: 32px;
+  width: 65px;
 }
 
 input:required:invalid {
@@ -52,26 +52,14 @@ label {
 
 span {
   margin: 0 0 0 10px;
-  font-size: 42px;
+  font-size: 32px;
   font-family: Arial
-}
-
-stat {
-}
-
-.points {
-  display: inline;
-  margin: 0 10px 20px 0;
-  padding: 5px;
-  font-size: 36px;
-  text-align: right;
-  float: right;
 }
 
 select {
   margin: 0 10px 10px 0;
   padding: 5px;
-  font-size: 36px;
+  font-size: 32px;
   width: 350px;
 }
 
@@ -83,12 +71,26 @@ hr.dotted {
 
 .measurement {
   display: inline;
-  margin: 0 10px 20px 0;
+  margin: 0 10px 20px 10px;
   padding: 5px;
   font-family: Arial;
-  font-size: 36px;
-  color: #2c3e50;
+  font-size: 32px;
+  color: #817036;
   width: 150px;
+}
+
+.points {
+  display: inline;
+  margin: 0 10px 20px 0;
+  padding: 5px;
+  font-size: 32px;
+  text-align: right;
+  float: right;
+}
+
+stat {
+  font-size: 32px;
+  font-family: Arial;
 }
 
 .PTsegment {
@@ -106,18 +108,39 @@ hr.dotted {
 }
 
 /* Small devices (portrait tablets and large phones, 300px and up) */
-@media only screen and (min-width: 300px) and (max-width: 600px) {
+@media only screen and (min-width: 300px) and (max-width: 550px) {
   h1 {
-    margin: 0 10px 0px 0;
+    margin: 0 10px 0 0;
     padding: 0px;
     font-size: 24px;
     font-family: Arial;
   };
 
+  .points {
+    float: right;
+  }
+
+  .measurement {
+    display: inline;
+    width: 0;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    font-size: 18px;
+  }
+
+  .PTsegment {
+    background: #fff;
+    border-radius: 10px;
+    margin: 0 0 15px 0;
+    padding: 15px 0px 15px 10px;
+  }
+
   .inWindow {
     width: 93vw;
     font-style: Arial;
   }
+
 };
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -127,4 +150,5 @@ hr.dotted {
     width: 700px;
     font-style: Arial;
   }
+
 }

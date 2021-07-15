@@ -39,3 +39,10 @@
   box-shadow: 2px 2px 5px 2px #909090;
   cursor: pointer;
 }
+
+
+/* Small devices (portrait tablets and large phones, 300px and up) */
+@media only screen and (min-width: 300px) and (max-width: 550px) {
+  .slider {
+    margin: 0 0 5px -10px;
+}
