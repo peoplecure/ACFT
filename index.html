@@ -28,8 +28,22 @@
   <div class="containerBODY">
 
     <div class="navbar">
-      <a href="/index.html" style="color: gold"><i class="fas fa-calculator">&nbsp ACFT Calculator</i></a>
-      <a href="/learn ACFT.html"><i class="fas fa-video">&nbsp Learn</i></a>
+      <a href="/index.html"><i class="fas fa-calculator">&nbsp ACFT Calculator</i></a>
+      <a href="/learn ACFT.html" onclick="openNav()"><i class="fas fa-video">&nbsp Learn</i></a>
+    </div>
+
+    <!-- The overlay menu -->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="#">Maximum Dead Lift</a>
+        <a href="#">Standing Power Throw</a>
+        <a href="#">Hand Release Push-Up</a>
+        <a href="#">Sprint Drag Carry</a>
+        <a href="#">Leg Tuck</a>
+        <a href="#">Plank Hold</a>
+        <a href="#">2-Mile Run</a>
+      </div>
     </div>
 
     <div>
@@ -294,6 +308,16 @@
   };
 
   document.getElementById("defaultOpen").click();
+
+  /* Open when someone clicks on the span element */
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+
+  /* Close when someone clicks on the "x" symbol inside the overlay */
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
 
 
 </script>

@@ -8,7 +8,9 @@ $(window).load(function(){
 	    x.style.display = "block";
 	  }
 	});
+
 	
+
 	$('input').on('change keyup', function(){
 
 	    //Scores
