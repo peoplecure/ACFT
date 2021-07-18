@@ -9,7 +9,13 @@ $(window).load(function(){
 	  }
 	});
 
-	
+	$(document).on("click", ".overlayBtn", function(openNav) {
+		document.getElementById("myNav").style.width = "100%";
+	});
+
+	$(document).on("click", ".closebtn", function(openNav) {
+		document.getElementById("myNav").style.width = "0%";
+	});
 
 	$('input').on('change keyup', function(){
 
