@@ -143,8 +143,8 @@
       <!-- Leg Tuck (reps)-->
       <div class = "PTsegment">
 
-        <button class="tabClass" onclick="openTab(event, 'LTKtab'),  openTab2(event, 'LTKscore')" id="defaultOpen">Leg Tuck</button>
-        <button class="tabClass" onclick="openTab(event, 'PLKtab'),  openTab2(event, 'PLKscore')">Plank Hold</button>
+        <button class="tabClass" onclick="openTab(event, 'LTKtab'),  openTab2(event, 'LTKscore'), tabColor(event)" id="defaultOpen">Leg Tuck</button>
+        <button class="tabClass" onclick="openTab(event, 'PLKtab'),  openTab2(event, 'PLKscore'), document.getElementById('defaultOpen').id = 'defaultOpenClose'">Plank Hold</button>
 
         <div id="LTKtab" class="tabcontent">
           <input id = "F"
@@ -261,8 +261,7 @@
 
 </body>
 
-<script>
-
+<script type="text/javascript">
   function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -270,6 +269,19 @@
       tabcontent[i].style.display = "none";
     }
     document.getElementById(tabName).style.display = "block";
+
+    let myBtns=document.querySelectorAll('.tabClass');
+        myBtns.forEach(function(btn) {
+
+            btn.addEventListener('click', () => {
+              myBtns.forEach(b => b.classList.remove('active'));
+              btn.classList.add('active');
+            });
+        });
+  };
+
+  function tabColor(event) {
+    document.getElementById('defaultOpenClose').id = 'defaultOpen';
   };
 
   function openTab2(evt2, tabName2) {
@@ -282,6 +294,8 @@
   };
 
   document.getElementById("defaultOpen").click();
+
+
 </script>
 
 </html>

@@ -108,10 +108,39 @@ stat {
   font-size: 24px;
   font-weight: bold !important;
   font-family: Arial;
+  color: black;
+  background-color: #fff;
+  border: 0px;
+  border-bottom: 0px;
+  width: 157px;
 }
 
 .ACFTscore {
   margin: 0 0 75px 0;
+}
+
+.active {
+  color: BlueViolet;
+  background-color: #fff;
+  border: 0px;
+  border-bottom: 3px solid BlueViolet;
+  width: 157px;
+}
+
+#defaultOpen {
+  color: Blue;
+  background-color: #fff;
+  border: 0px;
+  border-bottom: 3px solid Blue;
+  width: 157px;
+}
+
+#defaultOpenClose {
+  color: black;
+  background-color: #fff;
+  border: 0px;
+  border-bottom: 0px;
+  width: 157px;
 }
 
 /* Mobile menu */
@@ -175,9 +204,7 @@ stat {
   }
 
   .PTsegment {
-    background: #fff;
-    border-radius: 10px;
-    margin: 0 0 15px 0;
+    min-width: 320px;
     padding: 10px 7px 15px 7px;
   }
 
