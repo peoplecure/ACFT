@@ -97,6 +97,7 @@ stat {
 }
 
 .PTsegment {
+  min-width: 625px;
   background: #fff;
   border-radius: 10px;
   margin: 0 0 15px 0;
