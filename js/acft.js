@@ -1,5 +1,14 @@
 $(window).load(function(){
 
+	$(document).on("click", ".icon", function(ACFTmenu) {
+		var x = document.getElementById("myLinks");
+	  if (x.style.display === "block") {
+	    x.style.display = "none";
+	  } else {
+	    x.style.display = "block";
+	  }
+	});
+	
 	$('input').on('change keyup', function(){
 
 	    //Scores

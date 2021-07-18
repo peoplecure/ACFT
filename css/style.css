@@ -1,13 +1,15 @@
 html {
-  display: table;
-  margin: 0 auto;
-  background: #28313b;
+  margin: 0;
+  background: #222;
 }
 
 body {
-  display: table-cell;
-  vertical-align: middle;
-  height: 100%;
+  margin: 0;
+}
+
+.containerBODY {
+  padding-top: 65px;
+  display: table;
   margin: 0 auto;
 }
 
@@ -108,6 +110,47 @@ stat {
   font-family: Arial;
 }
 
+.ACFTscore {
+  margin: 0 0 75px 0;
+}
+
+/* Mobile menu */
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  margin: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.navbarStripe {
+  background-color: #000;
+  position: fixed;
+  margin: 0;
+  top: 0;
+  height: 46px;
+  width: 100%;
+  z-index: 99;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #fff;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.navbar a:hover {
+  color: gold;
+}
+
 /* Small devices (portrait tablets and large phones, 300px and up) */
 @media only screen and (min-width: 300px) and (max-width: 600px) {
   h1 {
@@ -149,5 +192,22 @@ stat {
     width: 93vw;
     font-style: Arial;
   }
+
+  /* Navbar */
+
+  .containerBODY {
+    padding-top: 0px;
+  }
+
+  .navbar {
+    top: auto;
+    bottom: 0;
+  }
+
+  .navbarStripe {
+    top: auto;
+    bottom: 0;
+  }
+
 
 };
