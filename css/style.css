@@ -113,7 +113,7 @@ stat {
   background-color: #fff;
   border: 0px;
   border-bottom: 0px;
-  width: 157px;
+  width: 145px;
 }
 
 .ACFTscore {
@@ -121,19 +121,19 @@ stat {
 }
 
 .active {
-  color: BlueViolet;
+  color: #ff5349;
   background-color: #fff;
   border: 0px;
-  border-bottom: 3px solid BlueViolet;
-  width: 157px;
+  border-bottom: 3px solid #ff5349;
+  width: 145px;
 }
 
 #defaultOpen {
-  color: Blue;
+  color: #ff5349;
   background-color: #fff;
   border: 0px;
-  border-bottom: 3px solid Blue;
-  width: 157px;
+  border-bottom: 3px solid #ff5349;
+  width: 145px;
 }
 
 #defaultOpenClose {
@@ -141,7 +141,7 @@ stat {
   background-color: #fff;
   border: 0px;
   border-bottom: 0px;
-  width: 157px;
+  width: 145px;
 }
 
 /* Mobile menu ////////////////////////////////////////////////////////////// */
